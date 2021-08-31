@@ -1,17 +1,17 @@
 # Site settings
-title: Fan's Farm
-email: fzheng@link.cuhk.edu.hk
-description: Fan's Blog
+title: Xunyi's Anthology
+email: xunyi_z@126.com
+description: A young man, thinking all the time
 # > # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://fzheng.me" # the base hostname & protocol for your site
+url: "https://sansuiz.github.io/wenji" # the base hostname & protocol for your site
 
 # twitter_username: jekyllrb
-github_username:  izhengfan
+github_username:  Sansuiz
 permalink: /:year/:month/:day/:title/
 
 # Build settings
