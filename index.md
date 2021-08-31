@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fan's Farm
+title: Xunyi's Anthology
 ---
 
 <article>
@@ -9,7 +9,7 @@ Moving slowly.
 </p></blockquote>
 </article>
 
-<p style="margin-top:1.2em;margin-bottom:0;"><b>Blogs</b> | Browse by <a href="/archive#tags">Tags</a></p>
+<p style="margin-top:1.2em;margin-bottom:0;"><b>Anthology</b> | Browse by <a href="/wenji/archive#tags">Tags</a></p>
 <hr>
 <table>
 {% for post in site.categories.en %}
@@ -20,4 +20,4 @@ Moving slowly.
 {% endfor %}
 </table>
 <hr>
-<p>All posts <a href="/archive">archived</a></p>
+<p>All posts <a href="/wenji/archive">archived</a></p>
