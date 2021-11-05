@@ -6,11 +6,10 @@ permalink: /about/
 
 ### Xunyi's Anthology | 三嵗文集
 
-I am a researcher in robotics and computer vision, with interest in SLAM and mobile robot navigation.
-I got my PhD in [MAE CUHK](http://www.mae.cuhk.edu.hk) supervised by [Prof LIU Yun-Hui](http://www.ri.cuhk.edu.hk/yhliu).
-Before coming to CUHK, I received my B. Eng degree in Mechatronic Engineering in Zhejiang University.
-
-I swim and jog. I am a fan of Golden State Warriors and Stephen Curry.
+Welcome to here, please allow me to introduce myself.First of all, I'm a book, as you can see, entitled "Xunyi's Anthology". 
+It's called the "三嵗文集". In this book, there are a lot of random articles, some original and some read excerpts. 
+References to the original text are for your own reading and study only. 
+In non-special cases, the author and other information will be indicated. 
 
 Email: [hi@fzheng.me](mailto:hi@fzheng.me)
 
