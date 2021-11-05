@@ -6,7 +6,8 @@ permalink: /about/
 
 ### Xunyi's Anthology | 三嵗文集
 
-Welcome to here, please allow me to introduce myself.First of all, I'm a book, as you can see, entitled "Xunyi's Anthology". 
+Welcome to here, please allow me to introduce myself. 
+First of all, I'm a book, as you can see, entitled "Xunyi's Anthology". 
 It's called the "三嵗文集". In this book, there are a lot of random articles, some original and some read excerpts. 
 References to the original text are for your own reading and study only. 
 In non-special cases, the author and other information will be indicated. 
