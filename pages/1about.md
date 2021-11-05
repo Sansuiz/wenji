@@ -8,11 +8,12 @@ permalink: /about/
 
 Welcome to here, please allow me to introduce myself. 
 First of all, I'm a book, as you can see, entitled "Xunyi's Anthology". 
-It's called the "三嵗文集". In this book, there are a lot of random articles, some original and some read excerpts. 
+It's called the "三嵗文集". In this book, there are a lot of random articles, some original and some read excerpts. <br>
 References to the original text are for your own reading and study only. 
 In non-special cases, the author and other information will be indicated. 
 
-Email: [hi@fzheng.me](mailto:hi@fzheng.me)
+If there is any violation of your rights and interests, please contact my master ([Xuny](mailto:sansui_z@126.com)) in time. I think he will reply to you in time as soon as he sees your message and make adjustments to the contents of this book in time.
+
 
 [Github](https://github.com/izhengfan) \| [Google Scholar](https://scholar.google.com/citations?user=PZOTyfIAAAAJ&hl=en) \| [ResearchGate](https://www.researchgate.net/profile/Fan_Zheng15) \| [Zhihu](http://www.zhihu.com/people/izhengfan)
 
