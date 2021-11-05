@@ -3,7 +3,7 @@ layout: cnpost
 title:  "回味 | 美丽的小兴安岭"
 date:   2020-01-01 15:00:00
 categories: cn
-tags: 回味 读书
+tags: 回味 读书 三年级
 ---
 
 &emsp;&emsp;我国东北的小兴安岭，有数不清的红松、白桦、栎树……几百里连成一片，就像绿色的海洋。
