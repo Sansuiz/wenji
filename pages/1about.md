@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-### ZHENG Fan 郑帆
+### Xunyi's Anthology | 三嵗文集
 
 I am a researcher in robotics and computer vision, with interest in SLAM and mobile robot navigation.
 I got my PhD in [MAE CUHK](http://www.mae.cuhk.edu.hk) supervised by [Prof LIU Yun-Hui](http://www.ri.cuhk.edu.hk/yhliu).
