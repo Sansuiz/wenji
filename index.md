@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Xunyi's Anthology
+title: Ss's Anthology
 ---
 
 <article>
 <blockquote><p> 
-Moving slowly.
+Silent Love.
 </p></blockquote>
 </article>
 
