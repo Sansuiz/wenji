@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "LUCA | 0-Prologue"
+title:  "LUCA | Prologue 0"
 date:   2021-09-01 09:00:00
 categories: en
 tags: 电影 EN 童话
