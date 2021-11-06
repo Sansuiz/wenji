@@ -6,8 +6,9 @@ categories: en
 tags: 电影 EN 童话
 ---
 
+>《LUCA | 夏日友晴天》序言片段，中文版[↗](https://buyivi.xyz/wenji/luca-prologue/)
 
-​&emsp;&emsp;<audio id="audio" controls="" preload="none">
+&emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Prologue.m4a">
 </audio>
 
