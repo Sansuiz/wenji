@@ -8,7 +8,7 @@ description: A young man, thinking all the time
 #   Google search results) and in your feed.xml site description.
 
 baseurl: "/wenji" # the subpath of your site, e.g. /blog/
-url: "https://sansuiz.github.io" # the base hostname & protocol for your site
+url: "https://buyivi.xyz" # the base hostname & protocol for your site
 
 # twitter_username: jekyllrb
 github_username:  Sansuiz
