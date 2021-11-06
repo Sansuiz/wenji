@@ -3,10 +3,10 @@ layout: post
 title:  "LUCA | Chapter 4"
 date:   2021-09-01 11:00:00
 categories: en
-tags: 电影 EN 童话
+tags: 电影 动画 听力
 ---
 
-《LUCA-夏日友晴天》 \| 动画 \| 第四章 \| [中文版↗](https://buyivi.xyz/wenji/luca-chapter4/)
+>《LUCA-夏日友晴天》 | 动画 | 第四章 | [中文版↗](https://buyivi.xyz/wenji/luca-chapter4/)
 
 ​&emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Chapter4.m4a">

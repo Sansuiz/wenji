@@ -3,10 +3,10 @@ layout: post
 title:  "LUCA | Prologue 0"
 date:   2021-09-01 09:00:00
 categories: en
-tags: 电影 EN 童话
+tags: 电影 动画 听力
 ---
 
-《LUCA-夏日友晴天》 \| 动画 \| 序言片段 \| [中文版↗](https://buyivi.xyz/wenji/luca-prologue/)
+>《LUCA-夏日友晴天》 | 动画 | 序言片段 | [中文版↗](https://buyivi.xyz/wenji/luca-prologue/)
 
 &emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Prologue.m4a">
