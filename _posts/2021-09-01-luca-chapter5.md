@@ -6,7 +6,10 @@ categories: en
 tags: 电影 EN 童话
 ---
 
->《LUCA-夏日友晴天》 | 动画 | 第四章 | [中文版↗](https://buyivi.xyz/wenji/luca-chapter5/)
+
+<p align="right">
+《LUCA-夏日友晴天》 | 动画 | 第四章 | [中文版↗](https://buyivi.xyz/wenji/luca-chapter5/)
+</p>
 
 ​&emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Chapter5.m4a">
