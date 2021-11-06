@@ -3,7 +3,7 @@ layout: cndefault
 permalink: /luca-prologue/
 ---
 
-### LUCA-夏日友晴天 | 序言
+### LUCA-夏日友晴天 | 0-序言
 
 &emsp;&emsp;“听着，托马索——我们真的有必要去小岛附近钓鱼吗？”
 
