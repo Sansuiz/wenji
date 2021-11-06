@@ -4,7 +4,7 @@ title: 关于
 permalink: /cnabout/
 ---
 
-### 三嵗文集 | Xunyi's Anthology
+### 三嵗文集 | Ss's Anthology
 
 本书，乃一大本也。
 
