@@ -132,7 +132,7 @@ tags: 电影 EN 童话
 
 &emsp;&emsp;And with a loud "Wooohoooo!" he jumped, joining Alberto in the water.
 
-&emsp;&emsp;They had changed back into their sea monster forms when they hit the water. 他们落水之后又变回了海怪的样子。 Now they started to swim toward the town.
+&emsp;&emsp;They had changed back into their sea monster forms when they hit the water. Now they started to swim toward the town.
 
 &emsp;&emsp;Luca just wanted to be in Portorosso already. Unfortunately, he was moving so quickly that he failed to notice the big rock he was about to swim into!
 
