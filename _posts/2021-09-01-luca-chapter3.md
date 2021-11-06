@@ -6,7 +6,7 @@ categories: en
 tags: 电影 EN 童话
 ---
 
->《LUCA-夏日友晴天》 | 动画 | 第三章 | [中文版↗](https://buyivi.xyz/wenji/luca-chapter3/)
+《LUCA-夏日友晴天》 \| 动画 \| 第三章 \| [中文版↗](https://buyivi.xyz/wenji/luca-chapter3/)
 
 ​&emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Chapter3.m4a">

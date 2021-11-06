@@ -6,7 +6,7 @@ categories: en
 tags: 电影 EN 童话
 ---
 
->《LUCA-夏日友晴天》 | 动画 | 第一章 | [中文版↗](https://buyivi.xyz/wenji/luca-chapter1/)
+《LUCA-夏日友晴天》 \| 动画 \| 第一章 \| [中文版↗](https://buyivi.xyz/wenji/luca-chapter1/)
 
 ​&emsp;&emsp;<audio id="audio" controls="" preload="none">
       <source id="m4a" src="https://buyivi.xyz/wenji/files/audio/Luca/Chapter1.m4a">
