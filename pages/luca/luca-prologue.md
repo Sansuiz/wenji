@@ -3,7 +3,7 @@ layout: cndefault
 permalink: /luca-prologue/
 ---
 
-### 0-Prologue | 序言
+### LUCA-夏日友晴天 | 序言
 
 个人简历 [>\>](/files/cvcn2019.pdf)
 
