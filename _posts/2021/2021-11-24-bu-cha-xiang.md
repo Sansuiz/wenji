@@ -3,7 +3,7 @@ layout: cnpost
 title:  "D211124-不差想，只差做"
 date:   2021-11-24 09:00:00
 categories: cn
-tags: 读书 岛读
+tags: 读书
 ---
 
 

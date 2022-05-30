@@ -3,7 +3,7 @@ layout: cnpost
 title:  "招商银行、星巴克、游乐场和咖啡"
 date:   2019-10-30 22:00:00
 categories: cn
-tags: 随记
+tags: 杂记
 ---
 
 
