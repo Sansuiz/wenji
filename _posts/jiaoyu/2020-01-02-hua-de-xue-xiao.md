@@ -3,7 +3,7 @@ layout: cnpost
 title:  "回味 | 花的学校"
 date:   2020-01-02 15:00:00
 categories: cn
-tags: 推荐-文章 慕然回首 教材
+tags: 文鉴 慕然回首
 ---
 
 &emsp;&emsp;当雷云在天上轰响，六月的阵雨落下的时候，湿润的东风走过荒野，在竹林中吹着口笛。
