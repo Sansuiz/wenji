@@ -1,7 +1,7 @@
 ---
 layout: cnpost
 title:  "回味 | 曾记否，幼时初学（二）"
-date:   2023-03-27 15:00:00
+date:   2023-03-26 15:00:00
 categories: cn
 tags: 古诗词品-小 慕然回首
 ---
