@@ -279,7 +279,7 @@ __目录__
 &emsp;山 一 程 ， 水 一 程，<br>
 &emsp;身 向 榆 关 那 畔 行，<br>
 &emsp;夜 深 千 帐 灯。<br>
-&emsp;风 一 更 ， 雪 一 更<br>
+&emsp;风 一 更 ， 雪 一 更，<br>
 &emsp;聒 碎 乡 心 梦 不 成，<br>
 &emsp;故 园 无 此 声。<br>
 </center>
