@@ -65,7 +65,7 @@ code {
   background-color: #fffefd;
   padding: 0.8em 3em 1.4em 3em\9;
   padding: 0.8vw 3.5vw 1.4vw 3.5vw;
-  font-size: 1.0em\9;
+  font-size: 0.8em\9;
   font-size: 1.0rem;
   line-height: 1.6;
 }
@@ -119,7 +119,7 @@ table {
   margin-bottom: 1rem;
 }
 table tbody tr td{
-  padding-right: 0.5em;
+  padding-right: 0.2em;
 }
 article table thead tr th, article table tbody tr td{
   padding-right: 0.3em;
