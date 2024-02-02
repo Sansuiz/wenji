@@ -9,6 +9,7 @@ tags: 观止 文鉴
 <div class="heti heti--ancient">
   <h1>出师表<span class="heti-meta heti-small">[两汉]<abbr title="字孔明,（181年～234年10月8日）">諸葛亮</abbr></span></h1>
 </div>
+<br>
 <div class="heti heti--columns-2">
   <p>臣亮言：</p>
   <p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢宏志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
