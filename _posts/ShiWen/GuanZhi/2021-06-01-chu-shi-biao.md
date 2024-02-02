@@ -28,6 +28,17 @@ tags: 观止 文鉴
     <p>願陛下託臣以討賊興復之效；不效，則治臣之罪，以告先帝之靈。若無興德之言，則責攸之、禕、允等之慢，以彰其咎。陛下亦宜自謀，以諮諏善道，察納雅言，深追先帝遺詔。臣不勝受恩感激。今當遠離，臨表涕零，不知所言！</p>
 </div>
 
+---
+
+<div class="heti heti--ancient heti--annotation">
+    <h2>庖丁解牛<p class="heti-meta heti-small">[战国]<abbr title="庄子，（公元前369～公元前286年）">庄周</abbr></p></h2>
+    <p>吾生也有涯，而知也无涯。以有涯随无涯，殆已！已而为知者，殆而已矣！为善无近名，为恶无近刑。缘督以为经，可以保身，可以全生，可以养亲，可以尽年。</p>
+    <p><u title="名丁的厨工。先秦古书往往以职业放在人名前"><ruby><rb>庖</rb><rp>(</rp><rt lang="zh-Latn">páo</rt><rp>)</rp></ruby>丁</u>为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所<u title="支撑，接触"><ruby><rb>踦</rb><rp>(</rp><rt lang="zh-Latn">yǐ</rt><rp>)</rp></ruby></u>，<u title="砉然：砉，又读xū，象声词。砉然，皮骨相离的声音"><ruby><rb>砉</rb><rp>(</rp><rt lang="zh-Latn">huā</rt><rp>)</rp></ruby>然</u><ruby><rb>向</rb><rp>(</rp><rt lang="zh-Latn">xiǎng</rt><rp>)</rp></ruby>然，奏刀<u title="騞然：象声词，形容比砉然更大的进刀解牛声"><ruby><rb>騞</rb><rp>(</rp><rt lang="zh-Latn">huō</rt><rp>)</rp></ruby>然</u>，莫不中音。合于《桑林》之舞，乃中《经首》之会。</p>
+    <p>文惠君曰：「嘻，善哉！技<u title="通「盍」，何，怎样"><ruby><rb>盖</rb><rp>(</rp><rt lang="zh-Latn">hé</rt><rp>)</rp></ruby></u>至此乎？」</p>
+    <p>庖丁释刀对曰：「臣之所好者，道也，进乎技矣。始臣之解牛之时，所见无非牛者。三年之后，未尝见全牛也。方今之时，臣以神遇而不以目视，官知止而<u title="指精神活动">神欲</u>行。依乎<u title="指牛的生理上的天然结构">天理</u>，<u title="击入大的缝隙">批大<ruby><rb>郤</rb><rp>(</rp><rt lang="zh-Latn">xì</rt><rp>)</rp></ruby></u>，<u title="顺着（骨节间的）空处进刀">导大<ruby><rb>窾</rb><rp>(</rp><rt lang="zh-Latn">kuǎn</rt><rp>)</rp></ruby></u>，<u title="依">因</u>其<u title="指牛体本来的结构">固然</u>，技经肯<ruby><rb>綮</rb><rp>(</rp><rt lang="zh-Latn">qìng</rt><rp>)</rp></ruby>之未尝，而况大<ruby><rb>軱</rb><rp>(</rp><rt lang="zh-Latn">gū</rt><rp>)</rp></ruby>乎！良庖岁更刀，割也；族庖月更刀，折也。今臣之刀十九年矣，所解数千牛矣，而刀刃若新发于<ruby><rb>硎</rb><rp>(</rp><rt lang="zh-Latn">xíng</rt><rp>)</rp></ruby>。彼节者有间，而刀刃者无厚；以无厚入有间，恢恢乎其于<em>游刃必有余地</em>矣，是以十九年而刀刃若新发于硎。虽然，每至于族，吾见其难为，<ruby><rb>怵</rb><rp>(</rp><rt lang="zh-Latn">chù</rt><rp>)</rp></ruby>然为戒，视为止，行为迟。动刀甚微，<ruby><rb>謋</rb><rp>(</rp><rt lang="zh-Latn">huò</rt><rp>)</rp></ruby>然已解，如土委地。提刀而立，为之四顾，为之<ruby><rb>踌</rb><rp>(</rp><rt lang="zh-Latn">chóu</rt><rp>)</rp><rb>躇</rb><rp>(</rp><rt lang="zh-Latn">chú</rt><rp>)</rp></ruby>满志，善刀而藏之。」</p>
+    <p>文惠君曰：「善哉！吾闻庖丁之言，得养生焉。」</p>
+</div>
+
 <center>
 <div class="heti heti--poetry">
   <h3>一剪梅·红藕香残玉簟秋<span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span></h3>
