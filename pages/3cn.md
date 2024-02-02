@@ -26,4 +26,4 @@ title: 三嵗文集
 {% endfor %}
 </table>
 <hr>
-<p>博文<a href="/wenji/cnarchive">归档</a></p>
+<p>文章<a href="/wenji/cnarchive">归档</a></p>
