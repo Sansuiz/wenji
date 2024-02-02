@@ -43,11 +43,9 @@ tags: 观止 文鉴
 <center>
 <div class="heti heti--poetry">
   <h3>九月九日忆山东兄弟<span class="heti-meta heti-small">[唐]<abbr title="号摩诘居士">王维</abbr></span></h3>
-  <p class="heti-x-large">
     独在异乡为异客<span class="heti-hang">，</span><br>
     每逢佳节倍思亲<span class="heti-hang">。</span><br>
     遥知兄弟登高处<span class="heti-hang">，</span><br>
     遍插茱萸少一人<span class="heti-hang">。</span>
-  </p>
-</center>
 </div>
+</center>
