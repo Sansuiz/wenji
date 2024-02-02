@@ -3,7 +3,7 @@ layout: cndefault
 ---
 <header>
 <h2>{{ page.title }}</h2>
-<p><i>{{ page.date | date: "%Y-%m-%d" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<p><i>{{ page.date | date: "%Y-%m-%d" }}</i>•<i>{{ page.content | number_of_words }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
 <script>
     var _hmt = _hmt || [];
