@@ -30,7 +30,7 @@ tags: 观止 文鉴
 </div>
 
 <div class="heti heti--poetry">
-  <h2>一剪梅·红藕香残玉簟秋<span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span></h2>
+  <h3>一剪梅·红藕香残玉簟秋<span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span></h3>
   <p class="heti-verse heti-x-large">
     <center>
     红藕香残玉簟秋。轻解罗裳，独上兰舟<span class="heti-hang">。</span><br>
@@ -42,7 +42,7 @@ tags: 观止 文鉴
 </div>
 
 <div class="heti heti--poetry">
-  <h2>九月九日忆山东兄弟<span class="heti-meta heti-small">[唐]<abbr title="号摩诘居士">王维</abbr></span></h2>
+  <h3>九月九日忆山东兄弟<span class="heti-meta heti-small">[唐]<abbr title="号摩诘居士">王维</abbr></span></h3>
   <p class="heti-x-large">
     <center>
     独在异乡为异客<span class="heti-hang">，</span><br>
