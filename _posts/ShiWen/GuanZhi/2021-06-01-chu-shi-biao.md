@@ -29,6 +29,7 @@ tags: 观止 文鉴
     <p>願陛下託臣以討賊興復之效；不效，則治臣之罪，以告先帝之靈。若無興德之言，則責攸之、禕、允等之慢，以彰其咎。陛下亦宜自謀，以諮諏善道，察納雅言，深追先帝遺詔。臣不勝受恩感激。今當遠離，臨表涕零，不知所言！</p>
 </div>
 
+<center>
 <div class="heti heti--poetry">
   <h3>一剪梅·红藕香残玉簟秋</h3>
   <span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span>
@@ -37,6 +38,7 @@ tags: 观止 文鉴
     花自飘零水自流。一种相思，两处闲愁<span class="heti-hang">。</span><br>
     此情无计可消除，才下眉头，却上心头<span class="heti-hang">。</span>
 </div>
+</center>
 
 <center>
 <div class="heti heti--poetry">
