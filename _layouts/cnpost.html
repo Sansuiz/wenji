@@ -5,21 +5,17 @@ layout: cndefault
 <h2>{{ page.title }}</h2>
 <p><i>{{ page.date | date: "%Y-%m-%d" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?7b053279adfbcdfb10b42d396be87d43";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+
 </header>
+
 <article>
 {{content}}
 </article>
 <div id="info-bottom">
 <hr>
+<p>本文总阅读量<span id="busuanzi_value_page_pv"></span>次</p>
 <p>标签: {% for tag in page.tags %}<block class="blog-tag"><a href="/wenji/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 <p><b>留言</b>请移步 <a href="https://support.qq.com/products/315295"> SANSUIZ | 兔小巢 </a> </p>
 </div>
