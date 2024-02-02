@@ -52,7 +52,7 @@ tags: 观止 文鉴
     红藕香残玉簟秋。轻解罗裳，独上兰舟<span class="heti-hang">。</span><br>
     云中谁寄锦书来，雁字回时，月满西楼<span class="heti-hang">。</span><br>
     花自飘零水自流。一种相思，两处闲愁<span class="heti-hang">。</span><br>
-    此情无计可消除，才下眉头，却上心头<span class="heti-hang">。</span>
+    此情无计可消除，<i>才下眉头<sup><a id="ref-01" href="#fn-01">[1]</a></sup></i>，却上心头<span class="heti-hang">。</span>
 </div>
 </center>
 
@@ -67,3 +67,20 @@ tags: 观止 文鉴
     遍插茱萸少一人<span class="heti-hang">。</span>
 </div>
 </center>
+
+<footer class="heti-fn">
+<ol>
+    <li id="fn-01">
+    <a href="#ref-01" title="移至">^</a>
+    CSS Reset：指代类似Eric Meyer's Reset CSS的样式重置方案
+    </li>
+    <li id="fn-02">
+    <a href="#ref-02" title="移至">^</a>
+    《中文排版需求》：https://www.w3.org/TR/clreq/
+    </li>
+    <li id="fn-03">
+    <a href="#ref-03" title="移至">^</a>
+    在当下前端技术尚不能完美解决中西文混排间距的情况下，常见的输入习惯是手动在中西文间加入空格（https://github.com/vinta/pangu.js）。这样做的弊端一是间距不可控（有时显得过大），二是通过空格符来排版只能算无奈之举。好消息是在最新的macOS、iOS中，使用原生语言开发的文本区域会自动处理中西文混排的间距（无论是否加空格），期待不用手敲空格的日子早日到来。
+    </li>
+</ol>
+</footer>
