@@ -7,7 +7,7 @@ tags: 观止 文鉴
 ---
 
 <div class="heti heti--ancient">
-  <h1>出师表</h1><span class="heti-meta heti-small">作者：<abbr title="字孔明,（181年～234年10月8日）">諸葛亮</abbr></span>
+  <h1>出师表<span class="heti-meta heti-small">[两汉]<abbr title="字孔明,（181年～234年10月8日）">諸葛亮</abbr></span></h1>
   <p>臣亮言：</p>
   <p>先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢宏志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。</p>
   <p>宫中府中俱为一体，陟罚臧否，不宜异同。若有作奸犯科及为忠善者，宜付有司论其刑赏，以昭陛下平明之治，不宜偏私，使内外异法也。</p>
@@ -30,8 +30,7 @@ tags: 观止 文鉴
 
 <center>
 <div class="heti heti--poetry">
-  <h3>一剪梅·红藕香残玉簟秋</h3>
-  <span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span>
+  <h3>一剪梅·红藕香残玉簟秋<span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span></h3>
     红藕香残玉簟秋。轻解罗裳，独上兰舟<span class="heti-hang">。</span><br>
     云中谁寄锦书来，雁字回时，月满西楼<span class="heti-hang">。</span><br>
     花自飘零水自流。一种相思，两处闲愁<span class="heti-hang">。</span><br>
