@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ss's Anthology
+title: Sansuiz's Anthology
 ---
 
 <article>
