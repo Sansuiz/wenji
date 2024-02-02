@@ -5,7 +5,7 @@ title: Ss's Anthology
 
 <article>
 <blockquote><p> 
-Silent Love.
+It just takes some time.
 </p></blockquote>
 </article>
 

@@ -6,7 +6,7 @@ title: 三嵗文集
 
 <article>
 <blockquote><p>
-料知命中无大事，关心雪后有梅花。
+就做一阵风，可以温柔，可以英勇。
 </p></blockquote>
 </article>
 
