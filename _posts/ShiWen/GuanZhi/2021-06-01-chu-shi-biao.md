@@ -29,7 +29,7 @@ tags: 观止 文鉴
 
 <details open>
 <summary>示例</summary>
-    <section class="heti--vertical heti--ancient">
+    <section class="heti heti--columns-2">
         <h1>出師表</h1>
         <p class="heti-small">作者：<abbr title="字孔明">諸葛亮</abbr>（181年－234年10月8日）</p>
         <p>先帝創業未半，而中道崩殂；今天下三分，益州疲弊，此誠危急存亡之秋也﹗然侍衞之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。</p>
