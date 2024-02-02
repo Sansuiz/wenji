@@ -30,25 +30,22 @@ tags: 观止 文鉴
 </div>
 
 <div class="heti heti--poetry">
-  <h3>一剪梅·红藕香残玉簟秋<span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span></h3>
-  <p class="heti-verse heti-x-large">
-    <center>
+  <h3>一剪梅·红藕香残玉簟秋</h3>
+  <span class="heti-meta heti-small">[宋]<abbr title="号易安居士">李清照</abbr></span>
     红藕香残玉簟秋。轻解罗裳，独上兰舟<span class="heti-hang">。</span><br>
     云中谁寄锦书来，雁字回时，月满西楼<span class="heti-hang">。</span><br>
     花自飘零水自流。一种相思，两处闲愁<span class="heti-hang">。</span><br>
     此情无计可消除，才下眉头，却上心头<span class="heti-hang">。</span>
-    </center>
-  </p>
 </div>
 
+<center>
 <div class="heti heti--poetry">
   <h3>九月九日忆山东兄弟<span class="heti-meta heti-small">[唐]<abbr title="号摩诘居士">王维</abbr></span></h3>
   <p class="heti-x-large">
-    <center>
     独在异乡为异客<span class="heti-hang">，</span><br>
     每逢佳节倍思亲<span class="heti-hang">。</span><br>
     遥知兄弟登高处<span class="heti-hang">，</span><br>
     遍插茱萸少一人<span class="heti-hang">。</span>
-    </center>
   </p>
+</center>
 </div>
