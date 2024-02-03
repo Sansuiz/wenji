@@ -14,17 +14,14 @@ permalink: /cnabout/
 
 坚持的人始终会坚持，惫懒的人持续惫懒，间歇性努力的人依旧在原地踏步。
 
+而我，可以或许可以做一个间歇性惫懒的人，只希望自己不会忘了初心。
+
 
 ### 其他好友
 
-[陈祖辉](https://racns.com/) \| 
 [安大略](http://www.anandalue.com/) \| 
 [曼亚灿](https://manyacan.com/) \| 
 [于长野](https://rabithua.club/) \| 
-[LeeYD](https://www.leeyiding.com/) \| 
 [1900](http://1900.live/) \| 
 [秦枫鸢梦](https://blog.zwying.com/) \| 
-[小凡梦](https://www.xiaofm.cn/) \| 
-[zmmio](https://zmmio.com/) \| 
-[定格咖啡馆馆长](https://kaix.in/) \| 
-[低头族](https://blog.dtz9.com/)
+[定格咖啡馆馆长](https://kaix.in/) 
