@@ -4,7 +4,7 @@ title: 关于
 permalink: /cnabout/
 ---
 
-### 三嵗文集 | Ss's Anthology
+### 三嵗文集 | Sansuiz's Anthology
 
 其实根本算不上什么文集，只是想取个好听的名字，一时半会儿没想出来，就随便加了文集二字。
 
