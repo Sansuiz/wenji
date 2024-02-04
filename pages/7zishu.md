@@ -3,8 +3,9 @@ layout: cndefault
 permalink: /zishu/
 ---
 
+<br>
 <center>
-<font face="/wenji/fonts/huiwen.otf" color="#f06464" size="5">我的自述</font>
+<font face="楷体" color="#f06464" size="5">我的自述</font>
 </center>
 
 个人简历 [>\>](/files/cvcn2019.pdf)
