@@ -8,7 +8,7 @@ permalink: /sousuo.html
 Page not found.
 
 <div class="page page-search">
-  <input id="search-input" type="text" placeholder="请在这里输入关键词^_^"></input>
+  <input id="search-input" type="text" placeholder="请在这里输入关键词^_^">
   <h1>
     <span>搜索结果</span>
     <i class="svg-icon icon-loading"></i>
