@@ -1,5 +1,5 @@
 ---
-layout: cndefault
+layout: default
 permalink: /sousuo.html
 ---
 
