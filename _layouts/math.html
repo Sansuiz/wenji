@@ -5,7 +5,7 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p><i>{{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • <i>{{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 <div class="post-meta">
-  <span><i>This article consists of {{ page.content | strip_html | strip_newlines | remove: " " | size }} words</i> <b>•</b> <i>It takes about {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minutes to read the full text</i></span>
+  <span><i>This article consists of {{ page.content | strip_html | strip_newlines | remove: " " | size }} words</i> , <i>It takes about {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minutes to read the full text</i></span>
 </div>
 </header>
 <article>
