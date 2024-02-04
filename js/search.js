@@ -12,7 +12,7 @@ function loadAllPostData(callback) {
   blog.ajax(
     {
       timeout: 20000,
-      url: blog.baseurl + '/static/xml/search.xml?t=' + blog.buildAt
+      url: blog.baseurl + '/xml/search.xml?t=' + blog.buildAt
     },
     function (data) {
       document.querySelector('.page-search .icon-loading').style.opacity = 0
