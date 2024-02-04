@@ -3,7 +3,7 @@ layout: cndefault
 permalink: /sousuo.html
 ---
 
-<h3> 404 </h3>
+<h3> 搜索</h3>
 
 Page not found.
 
