@@ -147,6 +147,54 @@ article table thead tr th, article table tbody tr td{
   padding: 0.5em 0em 0.5em 2.5em;
 }
 
+.page-search #search-input {
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #eaeaea;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+}
+.page-search h1 {
+  font-size: 16px;
+  height: 46px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.page-search h1 i {
+  font-size: 20px;
+  margin-left: 6px;
+}
+.page-search .list-search li {
+  list-style: disc;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.page-search .list-search a {
+  display: block;
+  border-bottom: 1px dashed #ccc;
+}
+.page-search .list-search .title {
+  display: inline-block;
+  word-break: break-all;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #999;
+}
+.page-search .list-search .content {
+  display: block;
+  font-size: 14px;
+  color: #5a5a5a;
+  word-break: break-all;
+  padding: 10px 0;
+}
+.page-search .list-search .hint {
+  font-size: inherit;
+  font-weight: bold;
+  color: #ff7f7f;
+}
 
 #info-bottom
 {

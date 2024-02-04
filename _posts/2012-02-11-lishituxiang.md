@@ -4,7 +4,6 @@ title: "历史图像与灵心善感"
 date: 2012-02-11 17:40:00
 categories: cn
 tags: 读书
-stickie: true
 ---
 
 ![资治通鉴](https://s2.ax1x.com/2020/01/11/l5TX4g.jpg)
