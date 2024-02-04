@@ -3,9 +3,9 @@ layout: cndefault
 ---
 <header>
 <h2>{{ page.title }}</h2>
-<p><i>{{ page.date | date: "%Y-%m-%d" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<p><i>{{ page.date | date: "%Y-%m-%d" }}</i>{% if page.author %} • <i>{{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 <div class="post-meta">
-  <span><i>本文总计 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字</i> <b>·</b> <i>阅读全文大约需要 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟</i></span>
+  <span><i>本文总计 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字</i> <b>•</b> <i>阅读全文大约需要 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟</i></span>
 </div>
 </header>
 <article>
