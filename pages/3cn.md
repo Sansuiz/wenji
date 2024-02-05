@@ -27,3 +27,6 @@ title: 三歲文集-SANSUIZ
 </table>
 <hr>
 <p>文章<a href="/wenji/cnarchive">归档</a></p>
+
+
+<a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
