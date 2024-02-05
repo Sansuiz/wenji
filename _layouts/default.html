@@ -7,6 +7,24 @@
   <a href="/wenji/">Sansuiz's Anthology</a> | <a href="/wenji/about">About </a> | <a href="/wenji/cn"> 中文</a> | <a href="https://buyivi.xyz/">三歲</a>
   </div>
   <div class="main-body">
+    <!-- 心知天气固定插件 -->
+		<div align="left" id="tp-weather-widget"></div>
+		<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
+		<script>tpwidget("init", {
+			"flavor": "slim",
+			"location": "WS0E9D8WN298",
+			"geolocation": "enabled",
+			"language": "en",
+			"unit": "c",
+			"theme": "chameleon",
+			"container": "tp-weather-widget",
+			"bubble": "enabled",
+			"alarmType": "badge",
+			"uid": "U81EB522D4",
+			"hash": "6b972a5f25f3cc4e8beb25e2feab9d4b"
+		});
+		tpwidget("show");
+    </script>
   {{ content }}
   </div>
 
