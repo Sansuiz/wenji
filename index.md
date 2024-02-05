@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sansuiz's Anthology
+title: Articles-SANSUIZ
 ---
 
 <article>
@@ -9,7 +9,7 @@ It just takes some time.
 </p></blockquote>
 </article>
 
-<p style="margin-top:1.2em;margin-bottom:0;"><b>Anthology</b> | Browse by <a href="/wenji/archive#tags">Tags</a></p>
+<p style="margin-top:1.2em;margin-bottom:0;"><b>Articles</b> | Browse by <a href="/wenji/archive#tags">Tags</a></p>
 <hr>
 <table>
 {% for post in site.categories.en %}

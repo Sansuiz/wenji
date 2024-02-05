@@ -1,7 +1,7 @@
 ---
 layout: cndefault
 permalink: /cn/
-title: 三歲文集
+title: 三歲文集-SANSUIZ
 ---
 
 <article>
