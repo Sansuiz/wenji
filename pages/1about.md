@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-### Sansuiz's Anthology | 三嵗文集
+### Sansuiz's Anthology | 三歲文集
 
 Welcome to here, please allow me to introduce myself. 
 First of all, I'm a book, as you can see, entitled "Sansuiz's Anthology". 
-It's called the "三嵗文集". In this book, there are a lot of random articles, some original and some read excerpts. 
+It's called the "三歲文集". In this book, there are a lot of random articles, some original and some read excerpts. 
 
 References to the original text are for your own reading and study only. <br>
 In non-special cases, the author and other information will be indicated. 
