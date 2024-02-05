@@ -29,4 +29,4 @@ title: 三歲文集-SANSUIZ
 <p>文章<a href="/wenji/cnarchive">归档</a></p>
 
 
-<a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+<li class="email"><a href="mailto:{{site.email}}"><i class="fas fa-envelope"></i></a></li>
