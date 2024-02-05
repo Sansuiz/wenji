@@ -14,7 +14,7 @@ permalink: /zishu/
 
 
 
-个人简历 [>\>](/wenji/files/cvcn2019.pdf)
+个人简历 [>\>](/wenji/files/)
 
 
 
