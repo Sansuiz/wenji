@@ -302,7 +302,7 @@ var _$src_8 = {};
     resultsContainer: null,
     json: [],
     success: Function.prototype,
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li><a href="{baseurl}" title="{desc}">{title}</a></li>',
     templateMiddleware: Function.prototype,
     sortMiddleware: function () {
       return 0
@@ -357,7 +357,7 @@ var _$src_8 = {};
     if (_$utils_9.isJSON(options.json)) {
       initWithJSON(options.json)
     } else {
-      initWithURL(options.json)
+      initWithbaseurl(options.json)
     }
 
     const rv = {
@@ -373,10 +373,10 @@ var _$src_8 = {};
     registerInput()
   }
 
-  function initWithURL (url) {
-    _$JSONLoader_2.load(url, function (err, json) {
+  function initWithbaseurl (baseurl) {
+    _$JSONLoader_2.load(baseurl, function (err, json) {
       if (err) {
-        throwError('failed to get JSON (' + url + ')')
+        throwError('failed to get JSON (' + baseurl + ')')
       }
       initWithJSON(json)
     })
