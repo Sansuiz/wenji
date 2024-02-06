@@ -21,3 +21,31 @@ layout: cndefault
 <p>标签: {% for tag in page.tags %}<block class="blog-tag"><a href="/wenji/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 <p><b>留言</b>请移步 <a href="https://f.wps.cn/g/hQQzfcZC/"> SANSUIZ | 留言单 </a> </p>
 </div>
+
+<div class="footer-col  footer-col-3 search-col">
+    <h4>SEARCH</h4>
+    <form id="search-form">
+      <input type="text" id="search-input" autocomplete="off"/>
+    </form>        
+    <div id="results-container"></div>
+    <!--ul id="results-container"></ul-->
+    <!--检验 div 与 ul 的区别-->
+    <!--div id="search-results"></div-->
+    <!--此处search-results与下文代码中的变量不一致-->
+</div>
+
+<script src="/wenji/js/simple-jekyll-search.min.js"></script>
+<!--这句代码也可以添加在foot.html文件中-->
+
+<script>
+	window.simpleJekyllSearch = new SimpleJekyllSearch({
+	searchInput: document.getElementById('search-input'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '/search.json',
+	searchResultTemplate: '<li><a href="{baseurl}?query={query}" title="{desc}">{title}</a></li>',
+	noResultsText: 'No results found',
+	limit: 10,
+	fuzzy: false,
+	exclude: ['Welcome']
+  })
+</script>
