@@ -9,7 +9,7 @@
     <!-- <script src='//lib.baomitu.com/valine/latest/Valine.min.js'></script> -->
     <script src='//lib.baomitu.com/valine/1.4.16/Valine.min.js'></script>
     <script>
-         new Valine([
+         new Valine({
             av: AV,
             el: '#comments',
             app_id: '{{ site.valine.appid }}',
@@ -22,5 +22,5 @@
             avatar: '',
             avatar_cdn: 'https://sdn.geekzu.org/avatar/',
             serverURLs: 'https://pdKdGrM3.api.lncldglobal.com',
-        ])
+        })
     </script>
