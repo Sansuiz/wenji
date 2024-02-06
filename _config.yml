@@ -31,8 +31,8 @@ timezone: TIMEZONE
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid:  xxxxxxxx # your leancloud app id
-  appkey: xxxxxxxx # your leancloud app key
+  appid:  pdKdGrM3tFGCQprXUy37XmXt-MdYXbMMI # your leancloud app id
+  appkey: KGugk8DvrsDppbX7iegXlrR4 # your leancloud app key
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki，v1.4.0+ 已废弃
   verify: true # Verification code，v1.4.0+ 已废弃
   placeholder: 非Github帐号登录用户，在此处留言 # comment box placeholder
@@ -43,4 +43,4 @@ valine:
   recordIP: true # 是否记录评论者IP
   enableQQ: true # 是否启用昵称框自动获取QQ昵称和QQ头像, 默认关闭
   avatar_cdn: https://sdn.geekzu.org/avatar/    # gravatar头像镜像
-  serverURLs: https://xxxxxxxx.api.lncldglobal.com # 把前8位字符xxxxxxxx替换成你自己AppID的前8位字符，leancloud国际版添加该参数，国内版无需
+  serverURLs: https://pdKdGrM3.api.lncldglobal.com # 把前8位字符xxxxxxxx替换成你自己AppID的前8位字符，leancloud国际版添加该参数，国内版无需
