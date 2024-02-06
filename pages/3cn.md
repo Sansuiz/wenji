@@ -6,7 +6,7 @@ title: 三歲文集-SANSUIZ
 
 <article>
 <blockquote><p>
-就做一阵风，可以温柔，可以英勇。
+🌿就做一阵风，可以温柔，可以英勇。
 </p></blockquote>
 </article>
 
