@@ -44,3 +44,14 @@ valine:
   enableQQ: true # 是否启用昵称框自动获取QQ昵称和QQ头像, 默认关闭
   avatar_cdn: https://sdn.geekzu.org/avatar/    # gravatar头像镜像
   serverURLs: https://pdKdGrM3.api.lncldglobal.com # 把前8位字符xxxxxxxx替换成你自己AppID的前8位字符，leancloud国际版添加该参数，国内版无需
+
+# Giscus comment settings
+giscus:
+  repo: "Sansuiz/wenji"
+  category: "Announcements" # Custom category on github discussion
+  repo_id: "MDEwOlJlcG9zaXRvcnk0MDE3MzUzODg=" # Giscus generated repo id
+  category_id: "DIC_kwDOF_H-3M4CdBge" # Giscus generated category id
+  mapping: 'pathname'
+  input_position: 'top'
+  theme: 'light_tritanopia'
+  lang: "zh-CN"
