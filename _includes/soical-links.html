@@ -1,0 +1,31 @@
+<div id="share-bar">
+	<h4>Share this:</h4>
+
+	<div class="share-buttons">
+
+	    <!-- facebook -->
+		<a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0');
+		return false;"
+	        title="Share on Facebook" >
+	        <i class="fa fa-facebook-official share-button"> facebook</i>
+	    </a>
+
+	    <!-- twitter -->
+	    <a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0');
+		return false;"
+	        title="Share on Twitter" >
+	        <i class="fa fa-twitter share-button"> twitter</i>
+	    </a>
+
+	   <!-- google+ -->
+	    <a  href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+	        onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0');
+		return false;"
+	        title="Share on Google+" >
+	        <i class="fa fa-google-plus share-button"> google</i>
+	    </a>
+	</div>
+
+</div>
