@@ -10,7 +10,7 @@
   booktag: "文学"    #书的分类标签
 
 - name: "了不起的盖茨比"    #书名
-  author: "[美]菲茨杰拉德"    #作者
+  author: "【美】菲茨杰拉德"    #作者
   translator: "巫宁坤等"    #翻译者
   press: "上海译文出版社"    #出版社
   publishdate: "2009-11"    #出版日期

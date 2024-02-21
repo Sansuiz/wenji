@@ -11,3 +11,17 @@
   stars: "★★★☆☆"    #评价星级
   rate: "还行"    #1到5星分别为很差、较差、还行、推荐、力荐
   review: "等待也是种信念，海的爱太深，时间太浅。"    #书评
+
+- name: "邓小平时代"    #书名
+  author: "【美】傅高义 (Ezra.F.Vogel)"    #作者
+  translator: "冯克利"    #翻译者
+  press: "生活·读书·新知三联书店"    #出版社
+  publishdate: "2013-1"    #出版日期
+  price: "微信读书"    #价格
+  bookimg: "https://img3.doubanio.com/view/subject/s/public/s24516687.jpg"    #封面图片链接地址
+  doubanurl: "https://book.douban.com/subject/20424526/"    #豆瓣书单地址
+  readdate: "2017-09-15"    #阅读日期
+  booktag: "传记"    #书的分类标签
+  stars: "★★★★★"    #评价星级
+  rate: "力荐"    #1到5星分别为很差、较差、还行、推荐、力荐
+  review: "我很想说的是，一代人有一代人的使命，每一个人都不是极端的正确者和错误者，我看到其他人评论，常见到有人踩一捧一，我就像是看到了50W，那是在试图否定我们的历史和发展。"    #书评
