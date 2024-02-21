@@ -19,3 +19,14 @@
   doubanurl: "https://book.douban.com/subject/26607419/"    #豆瓣书单地址
   readdate: "2024-02-21"    #阅读日期
   booktag: "政治"    #书的分类标签
+
+- name: "论语别裁（上下）"    #书名
+  author: "南怀瑾 著述"    #作者
+  translator: ""    #翻译者
+  press: "复旦大学出版社"    #出版社
+  publishdate: "2003-1"    #出版日期
+  price: "电子书"    #价格
+  bookimg: "https://img9.doubanio.com/view/subject/s/public/s2701795.jpg"    #封面图片链接地址
+  doubanurl: "https://book.douban.com/subject/1011215/"    #豆瓣书单地址
+  readdate: "2024-02-21"    #阅读日期
+  booktag: "哲学"    #书的分类标签
