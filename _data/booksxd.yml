@@ -8,3 +8,14 @@
   doubanurl: "https://book.douban.com/subject/26971148/"    #豆瓣书单地址
   readdate: "2018-12-29"    #阅读日期
   booktag: "文学"    #书的分类标签
+
+- name: "论中国"    #书名
+  author: "【美】亨利·基辛格"    #作者
+  translator: "胡利平 / 林华"    #翻译者
+  press: "中信出版社"    #出版社
+  publishdate: "2015-7"    #出版日期
+  price: "电子书"    #价格
+  bookimg: "https://img3.doubanio.com/view/subject/s/public/s34067257.jpg"    #封面图片链接地址
+  doubanurl: "https://book.douban.com/subject/26607419/"    #豆瓣书单地址
+  readdate: "2024-02-21"    #阅读日期
+  booktag: "政治"    #书的分类标签
