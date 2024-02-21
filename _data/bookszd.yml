@@ -18,3 +18,13 @@
   doubanurl: "https://book.douban.com/subject/30280804/"    #豆瓣书单地址
   readdate: "2024-02-21"    #阅读日期
   booktag: "经济"    #书的分类标签
+
+- name: "大国光伏"    #书名
+  author: "中国光伏行业协会 / 刘家琦·酷玩实验室团队"    #作者
+  press: "电子工业出版社"    #出版社
+  publishdate: "2024-1"    #出版日期
+  price: "电子书"    #价格
+  bookimg: "https://img1.doubanio.com/view/subject/s/public/s34720939.jpg"    #封面图片链接地址
+  doubanurl: "https://book.douban.com/subject/36590164/"    #豆瓣书单地址
+  readdate: "2024-02-21"    #阅读日期
+  booktag: "社科"    #书的分类标签
