@@ -14,7 +14,7 @@ It just takes some time.
 <table>
 {% for post in site.categories.en %}
 <tr id="blog-table">
-<td>{{ post.date | date: "%Y-%m-%d" }}</td>
+<td>{{ post.date | date: "%Y-%m-%d" }}</td><br>
 <td><a class="post-list-item" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
 </tr>
 {% endfor %}
