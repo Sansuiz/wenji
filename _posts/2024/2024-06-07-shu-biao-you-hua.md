@@ -1,15 +1,14 @@
 ---
 layout: cnpost
 title: "博客 | 鼠标指针美化"
-date: 2024-06-07 16:00:00
+date: 2024-06-06 16:00:00
 categories: cn
 tags: 博客
 comments: true
 ---
 
 ## 1 基本信息
-~~~
-#!/usr/bin/env js
+```Js
 var CURSOR;
 
 Math.lerp = (a, b, n) => (1 - n) * a + n * b;
@@ -92,5 +91,5 @@ class Cursor {
     CURSOR = new Cursor();
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
-~~~
+```
 ## 2 新建Js文件
