@@ -8,6 +8,7 @@ comments: true
 ---
 
 ## 1 基本信息
+
 ```JavaScript
 var CURSOR;
 
@@ -92,4 +93,5 @@ class Cursor {
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
 ```
+
 ## 2 新建Js文件
