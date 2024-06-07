@@ -9,7 +9,7 @@ comments: true
 
 ## 1 基本信息
 
-```JavaScript
+```js
 var CURSOR;
 
 Math.lerp = (a, b, n) => (1 - n) * a + n * b;
