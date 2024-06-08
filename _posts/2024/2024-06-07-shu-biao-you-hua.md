@@ -11,6 +11,7 @@ comments: true
 ## 1 基本信息
 
 瞎折腾一下，跟着网上的教程，实现网页鼠标指针美化效果。
+
 我是直接在js、css文件夹里，分别新建了一个js文件和一个css文件，具体代码如下。
 
 ## 2 新建Js文件
@@ -141,3 +142,22 @@ class Cursor {
   <link rel="stylesheet" href="{{ site.baseurl }}/css/mouse.css">
   <script src="{{ site.baseurl }}/js/mouse.js"></script>
 ```
+
+## 5 代码说明
+
+控制鼠标指针移动速度的方法在代码中已经体现在`render()`方法中的线性插值`（lerp）`部分。
+
+通过调整平滑系数（第三个参数）可以控制移动速度。
+在`render()`方法中，使用Math.lerp函数来计算前一帧和当前帧之间的插值。
+
+函数调用如下：
+
+```js
+this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);
+```
+
+其中，0.15是平滑系数，用于控制移动速度和平滑度。
+
+较小的平滑系数会导致更平滑的移动效果，但可能会移动速度较慢；
+
+较大的平滑系数则会导致更快的移动速度，但可能会有明显的抖动。
