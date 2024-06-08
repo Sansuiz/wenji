@@ -10,7 +10,7 @@ comments: true
 
 ## 1 基本信息
 
-瞎折腾一下，跟着网上的教程，实现网页鼠标指针美化效果。
+瞎折腾一下，跟着大佬的脚步[^1]，实现网页鼠标指针美化效果。
 
 我是直接在js、css文件夹里，分别新建了一个js文件和一个css文件，具体代码如下。
 
@@ -161,3 +161,7 @@ this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);
 较小的平滑系数会导致更平滑的移动效果，但可能会移动速度较慢；
 
 较大的平滑系数则会导致更快的移动速度，但可能会有明显的抖动。
+
+## 6 参考资料
+
+[^1]:[Xecades' Neverland--打造一款乖巧的鼠标指针特效](https://blog.xecades.xyz/articles/cursor/)
