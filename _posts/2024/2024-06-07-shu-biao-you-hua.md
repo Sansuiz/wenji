@@ -2,12 +2,18 @@
 layout: cnpost
 title: "博客 | 鼠标指针美化"
 date: 2024-06-06 16:00:00
+author: SANSUIZ
 categories: cn
 tags: 博客
 comments: true
 ---
 
 ## 1 基本信息
+
+瞎折腾一下，跟着网上的教程，实现网页鼠标指针美化效果。
+我是直接在js、css文件夹里，分别新建了一个js文件和一个css文件，具体代码如下。
+
+## 2 新建Js文件
 
 ```js
 var CURSOR;
@@ -94,4 +100,44 @@ class Cursor {
 })();
 ```
 
-## 2 新建Js文件
+## 3 新建CSS文件
+
+```css
+#cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 8px;
+    opacity: 0.25;
+    z-index: 10086;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    transition-property: background, opacity, transform;
+  }
+  
+  #cursor.hidden {
+    opacity: 0;
+  }
+  
+  #cursor.hover {
+    opacity: 0.1;
+    transform: scale(2.5);
+  }
+  
+  #cursor.active {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  ```
+
+## 4 引入页面效果
+
+我的网站是在_layouts文件夹中，
+在网页.html的`<body>……</body>`字节中添加以下代码。
+
+```html
+  <!-- 鼠标指针样式 -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/mouse.css">
+  <script src="{{ site.baseurl }}/js/mouse.js"></script>
+```
