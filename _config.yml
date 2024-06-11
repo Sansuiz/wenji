@@ -23,7 +23,7 @@ markdown: kramdown
 # highlighter: rouge
 # highlighter: false
 
-timezone: Asia/Shanghai
+timezone: Asia/Shenzhen
 
 # Valine评论系统开关
 # Valine.
