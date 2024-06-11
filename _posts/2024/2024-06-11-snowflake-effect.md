@@ -10,7 +10,7 @@ comments: true
 
 ## 1 基本信息
 
-给主页增加了一个「雪花飘落」特效。
+给主页增加了一个「雪花飘落」特效，虽然我把雪花颜色修改成了「淡绿」🫠，也顺便把主页字体颜色从`#2b5781`修改为`#61ac85`。
 
 ![主页雪花飘落效果](https://cdnv2.ruguoapp.com/Fv2yGmw0WSYqQbMkUaiE7Aqx4eJlv3.png?imageMogr2/auto-orient/thumbnail/231569@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MFNBTlNVSVomaGVpZ2h0PTE4/gravity/SouthEast/dx/10/dy/10)
 
