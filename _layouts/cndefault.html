@@ -61,4 +61,35 @@
     })(document);
 </script>
 
+<!-- 如果文章显示章节目录 -->
+{{- if .Params.toc }}
+ 
+<!-- 输出章节目录 -->
+{{ .TableOfContents }}
+ 
+<!-- 导航栏召唤按钮 -->
+<div id="collapsed-toc">
+    <a class="button">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+</div>
+ 
+<!-- 导航栏 -->
+<aside id="aside-toc">
+    <!-- 标题栏 -->
+    <div class="header">
+        <span>章节目录</span>    
+        <!-- 关闭按钮 -->
+        <a class="button close">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+    </div>
+    <!-- 章节目录 -->
+    <div class="content"></div>
+</aside>
+{{- end }}
+ 
+<!-- 下面是文章的正文 -->
+{{ .Content }}
+
 </html>
