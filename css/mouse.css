@@ -24,29 +24,3 @@
     opacity: 0.5;
     transform: scale(0.5);
   }
-
-.context-menu {
-  position: absolute;
-  z-index: 99999 !important;
-  background: white;
-  border: 1px solid #ddd;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  padding: 5px 0;
-}
-
-.context-menu-item {
-  padding: 8px 15px;
-  cursor: pointer;
-}
-
-.context-menu-item:hover {
-  background: #f0f0f0;
-}
-
-.visible {
-  display: block !important;
-}
-
-.hidden {
-  display: none !important;
-}
