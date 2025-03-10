@@ -147,6 +147,7 @@ article table thead tr th, article table tbody tr td{
   margin-bottom: 0.3em;
   color: #888;
   font-style: italic;
+  font-size: 0.8em;
 }
 #markdown-toc{
   border: solid 1px #ddd;
