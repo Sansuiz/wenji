@@ -95,7 +95,8 @@ class Cursor {
 
         document.addEventListener('click', e => {
             console.log('点击目标:', e.target);
-            console.log('菜单元素:', this.menu);
+            console.log('当前菜单可见状态:', this.menu.classList.contains('visible'));
+            console.log('菜单元素层级:', getStyle(this.menu, 'z-index'));
             if (!this.menu.contains(e.target) && this.menu.classList.contains('visible')) {
                 console.log('触发菜单隐藏');
                 this.menu.classList.remove('visible');
