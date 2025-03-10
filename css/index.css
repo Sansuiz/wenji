@@ -132,10 +132,31 @@ article table thead tr th, article table tbody tr td{
   margin: 0.2em 0.4em;
   line-height: 1.5;
   border: solid 1px #ddd;
-  border-radius: 999px;
   display: inline-block;
-  font-size: 16px\9;
   font-size: 1rem;
+  position: relative;
+}
+.blog-tag::before {
+  content: "# ";
+}
+.blog-tag:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+.blog-tag:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 25%, #ff7f7f 50%, transparent 75%);
+  background-size: 200% 100%;
+  animation: wave 1.5s linear infinite;
+}
+@keyframes wave {
+  0% { background-position: 0 0; }
+  100% { background-position: -200% 0; }
 }
 .blog-tag:hover{
   background-color: #eeeeec;
