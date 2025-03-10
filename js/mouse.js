@@ -75,15 +75,15 @@ class Cursor {
         const menuHeight = 200;
         
         // 动态计算定位
-        let x = e.clientX;
-        let y = e.clientY;
+        let x = e.clientX + 10;
+        let y = e.clientY + 10;
         
         // 边界检测
         if (x + menuWidth > window.innerWidth) {
-          x = window.innerWidth - menuWidth - 10;
+          x = window.innerWidth - menuWidth;
         }
         if (y + menuHeight > window.innerHeight) {
-          y = window.innerHeight - menuHeight - 10;
+          y = window.innerHeight - menuHeight;
         }
         
         menu.style.left = `${x}px`;
