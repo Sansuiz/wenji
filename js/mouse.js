@@ -62,6 +62,41 @@ class Cursor {
         document.onmouseleave = e => this.cursor.classList.add("hidden");
         document.onmousedown  = e => this.cursor.classList.add("active");
         document.onmouseup    = e => this.cursor.classList.remove("active");
+
+        // 自定义右键菜单
+        this.menu = document.createElement('div');
+        this.menu.className = 'context-menu';
+        
+        const menuItems = [
+            {text: '刷新页面', action: () => location.reload()},
+            {text: '返回首页', action: () => location.href = '/'}
+        ];
+
+        menuItems.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'context-menu-item';
+            div.textContent = item.text;
+            div.addEventListener('click', () => {
+                item.action();
+                this.menu.classList.remove('visible');
+            });
+            this.menu.appendChild(div);
+        });
+
+        document.body.appendChild(this.menu);
+
+        document.addEventListener('contextmenu', e => {
+            e.preventDefault();
+            this.menu.style.left = `${e.pageX}px`;
+            this.menu.style.top = `${e.pageY}px`;
+            this.menu.classList.add('visible');
+        });
+
+        document.addEventListener('click', e => {
+            if (!this.menu.contains(e.target)) {
+                this.menu.classList.remove('visible');
+            }
+        });
     }
 
     render() {
