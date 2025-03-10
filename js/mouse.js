@@ -73,8 +73,19 @@ class Cursor {
         menu.style.display = 'block';
         const menuWidth = 150;
         const menuHeight = 200;
-        const x = Math.min(e.clientX, window.innerWidth - menuWidth);
-        const y = Math.min(e.clientY, window.innerHeight - menuHeight);
+        
+        // 动态计算定位
+        let x = e.clientX;
+        let y = e.clientY;
+        
+        // 边界检测
+        if (x + menuWidth > window.innerWidth) {
+          x = window.innerWidth - menuWidth - 10;
+        }
+        if (y + menuHeight > window.innerHeight) {
+          y = window.innerHeight - menuHeight - 10;
+        }
+        
         menu.style.left = `${x}px`;
         menu.style.top = `${y}px`;
     });
