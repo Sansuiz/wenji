@@ -8,7 +8,6 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   	<link rel="stylesheet" type="text/css" href="{{ "/css/index.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/toc.css" | prepend: site.baseurl }}">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
@@ -29,85 +28,3 @@
 
 	<script src="js/Mouse.js"></script><!-- 点击烟花特效 -->
 </head>
-
-<style>
-  img.lazy {
-    background: #f1f1f1 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23eee"/></svg>') no-repeat center;
-    min-height: 200px;
-    border-radius: 4px;
-    transition: opacity 0.3s ease;
-  }
-  img.lazy.loaded {
-    opacity: 1 !important;
-  }
-  @media (prefers-color-scheme: dark) {
-    img.lazy {
-      background-color: #2a2a2a;
-    }
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const lazyImages = [].slice.call(document.querySelectorAll('img[data-src]'));
-    
-    if ('loading' in HTMLImageElement.prototype) {
-      lazyImages.forEach(img => {
-        img.loading = 'lazy';
-        img.src = img.dataset.src;
-        img.classList.add('loaded');
-      });
-      return;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          img.classList.add('loaded');
-          observer.unobserve(img);
-        }
-      });
-    }, {
-      rootMargin: '0px 0px 200px 0px'
-    });
-
-    lazyImages.forEach(img => {
-      observer.observe(img);
-      img.classList.add('lazy');
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const lazyVideos = [].slice.call(document.querySelectorAll('iframe[data-src]'));
-    
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const iframe = entry.target;
-          iframe.src = iframe.dataset.src;
-          iframe.removeAttribute('data-src');
-          videoObserver.unobserve(iframe);
-        }
-      });
-    }, {
-      rootMargin: '200px'
-    });
-  
-    lazyVideos.forEach(iframe => {
-      videoObserver.observe(iframe);
-      iframe.style.background = 'url(/img/loading.gif) center/50px no-repeat #f1f1f1';
-    });
-  });
-</script>
-
-  <link rel="preload" href="{{ site.baseurl }}/fonts/huiwen.woff2" as="font" type="font/woff2" crossorigin>
-  <style>
-    @font-face {
-      font-family: 'HuiwenFont';
-      src: url('{{ site.baseurl }}/fonts/huiwen.woff2') format('woff2');
-      font-display: swap;
-    }
-    body { font-family: 'HuiwenFont', sans-serif; }
-  </style>
