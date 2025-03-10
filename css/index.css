@@ -144,7 +144,7 @@ article table thead tr th, article table tbody tr td{
 
 .post-date {
   display: block;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
   color: #888;
   font-style: italic;
   font-size: 0.8em;
@@ -177,7 +177,7 @@ article table thead tr th, article table tbody tr td{
 .page-search .list-search li {
   list-style: disc;
   margin-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 }
 .page-search .list-search a {
   display: block;
