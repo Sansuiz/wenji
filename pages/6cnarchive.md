@@ -2,6 +2,8 @@
 layout: cndefault
 title: 归档 (含英文博客)
 permalink: /cnarchive/
+description: "三歲文集的完整文章归档，包含技术博客、生活随笔与文学创作，主题涵盖计算机视觉、软件开发、诗歌散文等多元化内容"
+keywords: "博客归档,技术文章,生活随笔,文学创作,计算机视觉,软件开发,Jekyll教程"
 ---
 
 ### 归档 (含英文博客)
