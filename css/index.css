@@ -141,6 +141,13 @@ article table thead tr th, article table tbody tr td{
   background-color: #eeeeec;
   border: solid 1px transparent;
 }
+
+.post-date {
+  font-size: 0.9em;
+  color: #666;
+  display: block;
+  margin-bottom: 0.2em;
+}
 #markdown-toc{
   border: solid 1px #ddd;
   border-radius: 3px;
