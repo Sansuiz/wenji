@@ -127,42 +127,11 @@ blog.addLoadEvent(function () {
     }
   }
 
-  // 在原有search函数顶部添加防抖逻辑
-  let searchDebounce = blog.debounce(function(key) {
-    actualSearch(key);
-  }, 300);
-  
-  function actualSearch(key) {
-    // 原有搜索逻辑替换为带中文分词的处理
-    let keywords = key.split(/[\s\-\/]+/).filter(k => k.length > 0);
-    let regexPattern = keywords.map(k => `(${blog.encodeRegChar(k)})`).join('|');
-    
-    // 创建复合正则表达式
-    let regex = new RegExp(regexPattern, 'gi');
-  
-    // 修改内容匹配逻辑
-    let contentMatch = content.match(regex);
-    if (contentMatch) {
-      hide = false;
-      let matchIndex = content.search(regex);
-      let contextStart = Math.max(matchIndex - 30, 0);
-      let contextEnd = Math.min(matchIndex + 100, content.length);
-      let previewContent = content.slice(contextStart, contextEnd);
-      
-      // 多重高亮处理
-      previewContent = previewContent.replace(regex, '<span class="hint">$&</span>');
-      dom_content.innerHTML = (contextStart > 0 ? '...' : '') + 
-        previewContent + 
-        (contextEnd < content.length ? '...' : '');
-    }
-  }
-  
-  // 修改事件监听器使用防抖函数
   blog.addEvent(input, 'input', function (event) {
     if (!inputLock) {
-      searchDebounce(event.target.value);
+      search(event.target.value)
     }
-  });
+  })
 
   blog.addEvent(input, 'compositionstart', function (event) {
     inputLock = true
