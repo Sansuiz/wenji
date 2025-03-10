@@ -71,8 +71,12 @@ class Cursor {
     document.addEventListener('contextmenu', e => {
         e.preventDefault();
         menu.style.display = 'block';
-        menu.style.left = `${Math.min(e.clientX, window.innerWidth - 150)}px`;
-        menu.style.top = `${Math.min(e.clientY, window.innerHeight - 200)}px`;
+        const menuWidth = 150;
+        const menuHeight = 200;
+        const x = Math.min(e.clientX, window.innerWidth - menuWidth);
+        const y = Math.min(e.clientY, window.innerHeight - menuHeight);
+        menu.style.left = `${x}px`;
+        menu.style.top = `${y}px`;
     });
 
     // 点击关闭菜单
