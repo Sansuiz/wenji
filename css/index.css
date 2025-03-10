@@ -133,7 +133,7 @@ article table thead tr th, article table tbody tr td{
   margin: 0.2em 0.4em;
   line-height: 1.5;
   border: solid 1px transparent;
-  border-radius: 999px;
+  border-radius: 0;
   display: inline-block;
   transition: all 0.3s ease;
 }
@@ -141,9 +141,10 @@ article table thead tr th, article table tbody tr td{
 .blog-tag::after {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
-  transition: inherit;
+  width: 0;
+  height: 0;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
 }
 .blog-tag::before {
   top: -1px;
@@ -163,9 +164,9 @@ article table thead tr th, article table tbody tr td{
 }
 .blog-tag:hover::before,
 .blog-tag:hover::after {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  border: 2px solid #ddd;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
 }
 font-size: 16px\9;
   font-size: 1rem;
