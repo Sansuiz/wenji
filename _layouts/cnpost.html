@@ -22,7 +22,7 @@ layout: cndefault
 {% endif %}
 
 <article>
-{{content|replace('<img src=', '<img loading="lazy" src=')}}
+{{content}}
 </article>
 
 
@@ -41,30 +41,3 @@ layout: cndefault
 {% if page.comments %}
     {% include giscus_comments.html %}
 {% endif %}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ page.title | escape }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ page.author | default: site.author | escape }}"
-  },
-  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-  "description": "{{ page.excerpt | strip_html | normalize_whitespace | truncate: 160 | escape }}",
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.title | escape }}"
-  }
-}
-</script>
-<style>
-@media (pointer: coarse) {
-  a, button {
-    min-width: 48px;
-    min-height: 48px;
-    padding: 12px;
-  }
-}
-</style>
