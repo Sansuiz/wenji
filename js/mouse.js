@@ -94,7 +94,6 @@ class Cursor {
         });
 
         document.addEventListener('click', e => {
-            e.stopPropagation();
             console.log('点击目标:', e.target);
             console.log('菜单元素:', this.menu);
             if (!this.menu.contains(e.target) && this.menu.classList.contains('visible')) {

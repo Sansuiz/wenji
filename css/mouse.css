@@ -27,7 +27,7 @@
 
 .context-menu {
   position: absolute;
-  z-index: 10087;
+  z-index: 99999 !important;
   background: white;
   border: 1px solid #ddd;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
