@@ -341,3 +341,23 @@ article table thead tr th, article table tbody tr td{
     color: #008080; }
   .highlight .il {
     color: #099; }
+.blog-tag {
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+  padding: 0.3em 0.8em;
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+
+/* 新增flex布局 */
+.blog-tag {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .blog-tag {
+    padding: 0.2em 0.6em;
+    font-size: 0.9em;
+  }
+}
