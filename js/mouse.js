@@ -80,3 +80,43 @@ class Cursor {
     CURSOR = new Cursor();
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
+
+
+// 悬浮目录交互逻辑
+window.addEventListener('DOMContentLoaded', () => {
+  const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const tocLinks = document.querySelectorAll('#toc-list a');
+  
+  // 滚动监听
+  window.addEventListener('scroll', () => {
+    let currentId = '';
+    headings.forEach(heading => {
+      const rect = heading.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.2 && rect.top > 0) {
+        currentId = heading.id;
+      }
+    });
+
+    tocLinks.forEach(link => {
+      link.parentElement.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentId}`) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  });
+
+  // 平滑滚动
+  tocLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  // 窗口大小变化重置位置
+  window.addEventListener('resize', () => {
+    const toc = document.querySelector('.toc-container');
+    toc.style.top = `${Math.max(100, window.scrollY + 100)}px`;
+  });
+});

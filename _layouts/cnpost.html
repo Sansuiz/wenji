@@ -21,7 +21,12 @@ layout: cndefault
     {% include cloud-music-full.html %}
 {% endif %}
 
-<article>
+<nav class="toc-container">
+  <div class="toc-title">目录</div>
+  <div id="toc-list">{{ content | toc_only }}</div>
+</nav>
+
+<article class="main-content">
 {{content|replace('<img src=', '<img loading="lazy" src=')}}
 </article>
 
