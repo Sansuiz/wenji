@@ -94,7 +94,10 @@ class Cursor {
         });
 
         document.addEventListener('click', e => {
+            console.log('点击目标:', e.target);
+            console.log('菜单元素:', this.menu);
             if (!this.menu.contains(e.target)) {
+                console.log('触发菜单隐藏');
                 this.menu.classList.remove('visible');
             }
         });
