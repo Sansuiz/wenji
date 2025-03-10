@@ -79,6 +79,13 @@ class Cursor {
             div.addEventListener('click', () => {
                 item.action();
                 this.menu.classList.remove('visible');
+                this.menu.style.display = 'none'; // 新增隐藏display属性
+            });
+            // 添加过渡结束事件
+            this.menu.addEventListener('transitionend', (e) => {
+                if (!this.menu.classList.contains('visible')) {
+                    this.menu.style.display = 'none';
+                }
             });
             this.menu.appendChild(div);
         });
