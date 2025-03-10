@@ -27,4 +27,70 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<script src="js/Mouse.js"></script><!-- 点击烟花特效 -->
+
+<!-- 图片懒加载 -->
+<style>
+  img.lazy {
+    background: #f1f1f1;
+    min-height: 200px;
+  }
+  @media (prefers-color-scheme: dark) {
+    img.lazy {
+      background: #2a2a2a;
+    }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.dataset.src;
+          if (src && img.src !== src) {
+            img.src = src;
+            img.classList.remove('lazy');
+          }
+        }
+      });
+    }, {
+      rootMargin: '0px 0px 200px 0px'
+    });
+
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      if ('loading' in HTMLImageElement.prototype) {
+        img.loading = 'lazy';
+        img.src = img.dataset.src;
+      } else {
+        observer.observe(img);
+      }
+    });
+  });
+</script>
 </head>
+
+<!-- Open Graph 协议 -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | prepend: site.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ site.url }}/img/og-image.jpg">
+
+<!-- Twitter 卡片 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yourtwitterhandle">
+<meta name="twitter:creator" content="@yourtwitterhandle">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}/img/twitter-image.jpg">
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "{{ site.url }}",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}"
+}
+</script>

@@ -27,3 +27,43 @@ permalink: /cnarchive/
   {% endif %}{% endfor %}{% endfor %}</ul>
   </div>
 {% endfor %}
+
+<!-- 添加年份分组结构 -->
+<div class="year-filter">
+{% assign years = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in years %}
+  <details class="year-group">
+    <summary>{{ year.name }}</summary>
+    
+    <!-- 添加月份筛选 -->
+    <div class="month-filter">
+    {% assign months = year.items | group_by_exp: 'post', 'post.date | date: "%m"' %}
+    {% for month in months %}
+      <button data-month="{{ month.name }}">{{ month.name }}月</button>
+    {% endfor %}
+    </div>
+
+    <!-- 文章列表 -->
+    <ul class="post-list">
+    {% for post in year.items %}
+      <li data-month="{{ post.date | date: '%m' }}">
+        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="pjaxlink" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </details>
+{% endfor %}
+</div>
+
+<!-- 添加交互脚本 -->
+<script>
+document.querySelectorAll('.month-filter button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const month = btn.dataset.month;
+    document.querySelectorAll(`.post-list li`).forEach(li => {
+      li.style.display = li.dataset.month === month ? '' : 'none';
+    });
+  });
+});
+</script>
