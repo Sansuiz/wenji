@@ -21,23 +21,7 @@ layout: cndefault
     {% include cloud-music-full.html %}
 {% endif %}
 
-<div id="toc-sidebar"></div>
 <article>
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const toc = document.getElementById('toc-sidebar');
-  const headings = document.querySelectorAll('article h2, article h3');
-  headings.forEach(heading => {
-    const id = heading.innerText.replace(/ /g, '_');
-    heading.id = id;
-    const link = document.createElement('a');
-    link.href = `#${id}`;
-    link.className = heading.tagName.toLowerCase();
-    link.textContent = heading.innerText;
-    toc.appendChild(link);
-  });
-});
-</script>
 {{content}}
 </article>
 
