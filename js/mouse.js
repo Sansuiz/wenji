@@ -55,6 +55,33 @@ class Cursor {
     }
 
     init() {
+    // 创建右键菜单
+    const menu = document.createElement('div');
+    menu.className = 'context-menu';
+    menuItems.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'context-menu-item';
+        div.textContent = item.text;
+        div.onclick = item.action;
+        menu.appendChild(div);
+    });
+    document.body.appendChild(menu);
+
+    // 右键事件监听
+    document.addEventListener('contextmenu', e => {
+        e.preventDefault();
+        menu.style.display = 'block';
+        menu.style.left = `${Math.min(e.clientX, window.innerWidth - 150)}px`;
+        menu.style.top = `${Math.min(e.clientY, window.innerHeight - 200)}px`;
+    });
+
+    // 点击关闭菜单
+    document.addEventListener('mousedown', e => {
+        if (!menu.contains(e.target)) {
+            menu.style.display = 'none';
+        }
+    });
+
         document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
         document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
         document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};
@@ -76,7 +103,46 @@ class Cursor {
     }
 }
 
+const menuItems = [
+    {text: '刷新页面', action: () => location.reload()},
+    {text: '返回首页', action: () => location.href = '/'},
+    {text: 'GitHub仓库', action: () => window.open('https://github.com/SansuiZ')},
+    {text: '电子书库', action: () => location.href = '{{ site.baseurl }}/ebooks'}
+];
+
 (() => {
     CURSOR = new Cursor();
     // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
+
+// 添加以下CSS样式到对应文件
+const css = `
+.context-menu {
+    position: absolute;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10086;
+    display: none;
+    min-width: 120px;
+    padding: 8px 0;
+    font-family: 'LXGW WenKai', sans-serif;
+    backdrop-filter: blur(5px);
+}
+
+.context-menu-item {
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #444;
+    font-size: 14px;
+}
+
+.context-menu-item:hover {
+    background: rgba(79, 192, 141, 0.12);
+    color: #4fc08d;
+    transform: translateX(2px);
+}`;
+
+document.head.appendChild(document.createElement('style')).textContent = css;
