@@ -20,8 +20,8 @@ title: 三歲文集-SANSUIZ
 <table>
 {% for post in site.categories.cn %}
 <tr id="blog-table">
-<td><span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></td>
-<td><a class="post-list-item" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></td>
+<div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 </tr>
 {% endfor %}
 </table>
