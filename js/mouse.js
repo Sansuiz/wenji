@@ -86,6 +86,7 @@ class Cursor {
         document.body.appendChild(this.menu);
 
         document.addEventListener('contextmenu', e => {
+            console.log('Context menu triggered');
             e.preventDefault();
             this.menu.style.left = `${e.pageX}px`;
             this.menu.style.top = `${e.pageY}px`;
