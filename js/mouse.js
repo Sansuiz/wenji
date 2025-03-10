@@ -140,8 +140,8 @@ const css = `
 }
 
 .context-menu-item:hover {
-    background: rgba(79, 192, 141, 0.12);
-    color: #4fc08d;
+    background: rgba(240, 100, 100, 0.12);
+    color:rgb(180, 45, 56);
     transform: translateX(2px);
 }`;
 
