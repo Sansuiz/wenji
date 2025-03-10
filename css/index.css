@@ -128,13 +128,46 @@ article table thead tr th, article table tbody tr td{
 }
 
 .blog-tag{
+  position: relative;
   padding: 0.1em 0.6em;
   margin: 0.2em 0.4em;
   line-height: 1.5;
-  border: solid 1px #ddd;
+  border: solid 1px transparent;
   border-radius: 999px;
   display: inline-block;
-  font-size: 16px\9;
+  transition: all 0.3s ease;
+}
+.blog-tag::before,
+.blog-tag::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  transition: inherit;
+}
+.blog-tag::before {
+  top: -1px;
+  left: -1px;
+  border-top: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+}
+.blog-tag::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+.blog-tag:hover {
+  background-color: #f8f8f8;
+  border-color: #ddd;
+}
+.blog-tag:hover::before,
+.blog-tag:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border: 2px solid #ddd;
+}
+font-size: 16px\9;
   font-size: 1rem;
 }
 .blog-tag:hover{
