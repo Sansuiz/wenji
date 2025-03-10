@@ -1,0 +1,46 @@
+/* 目录导航样式 */
+#toc-sidebar {
+  background: #f8f9fadd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  backdrop-filter: blur(8px);
+}
+
+.toc-nav {
+  padding: 12px 0;
+}
+
+.toc-item {
+  display: block;
+  padding: 8px 20px;
+  color: #495057;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 层级缩进 */
+.level-2 { padding-left: 1em; }
+.level-3 { padding-left: 2em; }
+.level-4 { padding-left: 3em; }
+
+/* hover效果 */
+.toc-item:hover {
+  color: #212529;
+  background: rgba(206,212,218,0.15);
+  transform: translateX(4px);
+}
+
+/* 当前激活状态 */
+.toc-item.active {
+  color: #1c7ed6;
+  font-weight: 500;
+  border-left: 3px solid #1c7ed6;
+}
+
+/* 移动端适配 */
+@media (max-width: 1200px) {
+  #toc-sidebar {
+    display: none;
+  }
+}
