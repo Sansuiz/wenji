@@ -60,23 +60,7 @@ code {
   bottom: 0;
 }
 
-header p {
-  margin-bottom: 0.5em;
-}
-
-.main-body {
-  margin-top: 2em;
-}
-
-/* 英文布局专属调整 */
-.layout-default header p {
-  margin-bottom: 0.3em;
-}
-
-/* 中文布局专属调整 */
-.layout-cndefault header p {
-  margin-bottom: 0.4em;
-}
+.main-body
 {
   background-color: #fffefd;
   padding: 0.8em 3em 1.4em 3em\9;
