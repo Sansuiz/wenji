@@ -1,72 +1,65 @@
 ---
 layout: cndefault
-title: 阅影录
+title: 影音书单
 permalink: /media/
 ---
 
+<!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" id="tag-heading">
-                    <h1>阅影录</h1>
-                    <span class="subheading">书影音综合记录</span>
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
+<!-- Main Content -->
 <div class="container">
     <div class="hexo-douban-tabs">
-        <a class="hexo-douban-tab" href="#media-books">书籍</a>
-        <a class="hexo-douban-tab" href="#media-movies">影音</a>
+        <button class="hexo-douban-button hexo-douban-active" data-type="all">全部</button>
+        <button class="hexo-douban-button" data-type="book">书籍</button>
+        <button class="hexo-douban-button" data-type="movie">影视</button>
     </div>
 
-    <!-- 书籍区块 -->
-    <div id="media-books">
+    <!-- 全部内容 -->
+    <div id="hexo-douban-all">
         {% for item in site.data.media %}
-        {% if item.type == 'book' %}
-        <div class="hexo-douban-item">
+        <div class="hexo-douban-item" data-type="{{ item.type }}">
             <div class="hexo-douban-picture">
-                <img src="{{ item.cover_url }}" alt="{{ item.name }}">
+                <img src="{{ item.cover }}" data-src="{{ item.cover }}" referrerpolicy="no-referrer">
             </div>
             <div class="hexo-douban-info">
-                <div class="hexo-douban-title">{{ item.name }}</div>
-                <div class="hexo-douban-meta">
-                    {{ item.author }} | {{ item.press }} | {{ item.publishdate }}
+                <div class="hexo-douban-title">
+                    <a target="_blank" href="{{ item.url }}">{{ item.title }}</a>
                 </div>
                 <div class="hexo-douban-meta">
-                    {{ item.readdate }} 读过 | {{ item.tags }}
+                    {% if item.type == 'book' %}
+                    {{ item.author }} | {{ item.translator }}译 | {{ item.press }} | {{ item.publishdate }}
+                    {% else %}
+                    {{ item.director }} | {{ item.genre }} | {{ item.year }}
+                    {% endif %}
                 </div>
+                <div class="hexo-douban-meta">
+                    {{ item.date }} {{ item.status }} | {{ item.tags }}
+                </div>
+                {% if item.rating %}
+                <div class="hexo-douban-rating">
+                    评分：{{ item.rating }} 
+                    <span class="stars">{{ item.stars }}</span>
+                </div>
+                {% endif %}
+                {% if item.review %}
+                <div class="hexo-douban-comments">我的评价：{{ item.review }}</div>
+                {% endif %}
             </div>
         </div>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-    <!-- 影音区块 -->
-    <div id="media-movies">
-        {% for item in site.data.media %}
-        {% if item.type == 'movie' %}
-        <div class="hexo-douban-item">
-            <div class="hexo-douban-picture">
-                <img src="{{ item.cover_url }}" alt="{{ item.name }}">
-            </div>
-            <div class="hexo-douban-info">
-                <div class="hexo-douban-title">{{ item.name }}</div>
-                <div class="hexo-douban-meta">
-                    导演：{{ item.director }} | 上映：{{ item.releasedate }}
-                </div>
-                <div class="hexo-douban-meta">
-                    {{ item.viewdate }} 看过 | {{ item.tags }}
-                </div>
-                <div class="hexo-douban-comments">
-                    {{ item.rating }} {{ item.review }}
-                </div>
-            </div>
-        </div>
-        {% endif %}
         {% endfor %}
     </div>
 </div>
+
+<!-- 分页和脚本保持与书单页面相同 -->
