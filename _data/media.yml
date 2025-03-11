@@ -1,0 +1,24 @@
+# 媒体库数据
+- title: ""
+  type: "book" # 类型：book/movie
+  date: "" # 观看/阅读日期
+  rating: "" # 评分
+  cover: "" # 封面图
+  link: "" # 豆瓣链接
+  # 书籍特有字段
+  author: ""
+  publisher: ""
+  # 影视特有字段
+  director: ""
+  actors: ""
+  duration: ""
+
+- title: ""
+  type: "movie"
+  date: ""
+  rating: ""
+  cover: ""
+  link: ""
+  director: ""
+  actors: ""
+  duration: ""

@@ -1,0 +1,122 @@
+---
+layout: cndefault
+permalink: /media/
+title: 书影集
+---
+
+<div class="media-container">
+  <!-- 分类标签 -->
+  <div class="media-tabs">
+    <button class="tab-btn active" onclick="filterMedia('all')">全部</button>
+    <button class="tab-btn" onclick="filterMedia('book')">读书（{{ site.data.media | where: 'type', 'book' | size }}）</button>
+    <button class="tab-btn" onclick="filterMedia('movie')">观影（{{ site.data.media | where: 'type', 'movie' | size }}）</button>
+  </div>
+
+  <!-- 媒体卡片 -->
+  <div class="media-grid">
+    {% for item in site.data.media %}
+    <div class="media-card" data-type="{{ item.type }}">
+      <img src="{{ item.cover }}" alt="{{ item.title }}" class="media-cover">
+      <div class="media-info">
+        <h3><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h3>
+        <div class="meta-line">
+          <span class="rating">{{ item.rating }}</span>
+          <span class="date">{{ item.date | date: "%Y-%m-%d" }}</span>
+        </div>
+        {% if item.type == 'book' %}
+          <p class="author">{{ item.author }} · {{ item.publisher }}</p>
+        {% else %}
+          <p class="director">{{ item.director }} · {{ item.duration }}</p>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.media-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.media-tabs {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  background: #f0f0f0;
+  border-color: #666;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.media-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.media-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.media-info {
+  padding: 1rem;
+}
+
+.media-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.meta-line {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.author,
+.director {
+  color: #888;
+  font-size: 0.9rem;
+}
+</style>
+
+<script>
+function filterMedia(type) {
+  const cards = document.querySelectorAll('.media-card');
+  const tabs = document.querySelectorAll('.tab-btn');
+  
+  tabs.forEach(tab => tab.classList.remove('active'));
+  event.target.classList.add('active');
+
+  cards.forEach(card => {
+    if (type === 'all') {
+      card.style.display = 'block';
+    } else {
+      card.style.display = card.dataset.type === type ? 'block' : 'none';
+    }
+  });
+}
+</script>
