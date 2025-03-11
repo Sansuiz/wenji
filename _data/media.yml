@@ -1,0 +1,33 @@
+media:
+  - name: "邓小平时代"
+    type: "book"
+    author: "【美】傅高义"
+    press: "生活·读书·新知三联书店"
+    publishdate: "2013-1"
+    viewdate: "2017-09-15"
+    tags: "传记"
+    cover_url: "https://img3.doubanio.com/view/subject/s/public/s24516687.jpg"
+    review: "我很想说的是，一代人有一代人的使命，每一个人都不是极端的正确者和错误者..."
+    rating: "★★★★★"
+
+  - name: "肖申克的救赎"
+    type: "movie"
+    director: "弗兰克·德拉邦特"
+    releasedate: "1994-09-10"
+    viewdate: "2023-05-01"
+    tags: "剧情"
+    cover_url: "https://example.com/shawshank.jpg"
+    review: "经典励志电影，展现人性光辉..."
+    rating: "★★★★★"
+
+  - name: "示例电影"
+    type: "movie"
+    director: "导演名"
+    releasedate: "2023"
+    viewdate: "2024-06-20"
+    tags: "剧情/冒险"
+    cover_url: "https://example.com/movie.jpg"
+    review: "示例影评内容"
+    rating: "★★★★☆"
+
+# 删除原有的films和movies层级

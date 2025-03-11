@@ -1,0 +1,70 @@
+---
+layout: cndefault
+title: 阅影录
+permalink: /media/
+---
+
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>阅影录</h1>
+                    <span class="subheading">书影音综合记录</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="hexo-douban-tabs">
+        <a class="hexo-douban-tab" href="#media-books">书籍</a>
+        <a class="hexo-douban-tab" href="#media-movies">影音</a>
+    </div>
+
+    <!-- 书籍区块 -->
+    <div id="media-books">
+        {% for item in site.data.media %}
+        {% if item.type == 'book' %}
+        <div class="hexo-douban-item">
+            <div class="hexo-douban-picture">
+                <img src="{{ item.cover_url }}" alt="{{ item.name }}">
+            </div>
+            <div class="hexo-douban-info">
+                <div class="hexo-douban-title">{{ item.name }}</div>
+                <div class="hexo-douban-meta">
+                    {{ item.author }} | {{ item.press }} | {{ item.publishdate }}
+                </div>
+                <div class="hexo-douban-meta">
+                    {{ item.readdate }} 读过 | {{ item.tags }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- 影音区块 -->
+    <div id="media-movies">
+        {% for item in site.data.media %}
+        {% if item.type == 'movie' %}
+        <div class="hexo-douban-item">
+            <div class="hexo-douban-picture">
+                <img src="{{ item.cover_url }}" alt="{{ item.name }}">
+            </div>
+            <div class="hexo-douban-info">
+                <div class="hexo-douban-title">{{ item.name }}</div>
+                <div class="hexo-douban-meta">
+                    导演：{{ item.director }} | 上映：{{ item.releasedate }}
+                </div>
+                <div class="hexo-douban-meta">
+                    {{ item.viewdate }} 看过 | {{ item.tags }}
+                </div>
+                <div class="hexo-douban-comments">
+                    {{ item.rating }} {{ item.review }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
