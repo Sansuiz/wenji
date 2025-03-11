@@ -32,9 +32,6 @@ timezone: Asia/Shanghai
 # more info please open https://valine.js.org
 valine:
   enable: false
-
-back_to_top_image: "/img/back-to-top.png"
-# 悬浮返回顶部按钮图片路径
   appid:  pdKdGrM3tFGCQprXUy37XmXt-MdYXbMMI # your leancloud app id
   appkey: KGugk8DvrsDppbX7iegXlrR4 # your leancloud app key
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki，v1.4.0+ 已废弃
