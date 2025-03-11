@@ -10,36 +10,6 @@
     transition: 0.2s ease-in-out;
     transition-property: background, opacity, transform;
   }
-
-  .back-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 50px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(180, 45, 56, 0.8);
-    cursor: pointer;
-    z-index: 9999;
-    display: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-  }
-  
-  .back-to-top::after {
-    content: '▲';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 18px;
-  }
-  
-  .back-to-top:hover {
-    background: rgba(180, 45, 56, 1);
-    transform: scale(1.1);
-  }
   
   #cursor.hidden {
     opacity: 0;

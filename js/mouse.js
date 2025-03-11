@@ -132,25 +132,7 @@ const menuItems = [
 
 (() => {
     CURSOR = new Cursor();
-    
-    // 添加返回顶部按钮交互
-    const backToTop = document.createElement('div');
-    backToTop.className = 'back-to-top';
-    document.body.appendChild(backToTop);
-
-    window.addEventListener('scroll', () => {
-        backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
-    });
-
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
-})();
-
-// 需要重新获取列表时，使用 CURSOR.refresh()
+    // 需要重新获取列表时，使用 CURSOR.refresh()
 })();
 
 // 添加以下CSS样式到对应文件
