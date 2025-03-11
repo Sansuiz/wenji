@@ -1,24 +1,24 @@
 # 媒体库数据
-- title: ""
+- title: "太白金星有点烦"
   type: "book" # 类型：book/movie
-  date: "" # 观看/阅读日期
-  rating: "" # 评分
-  cover: "" # 封面图
-  link: "" # 豆瓣链接
+  date: "2024-02-21" # 观看/阅读日期
+  rating: "4/5" # 评分
+  cover: "https://img9.doubanio.com/view/subject/s/public/s34544956.jpg" # 封面图
+  link: "https://book.douban.com/subject/36328704/" # 豆瓣链接
   # 书籍特有字段
-  author: ""
-  publisher: ""
+  author: "马伯庸"
+  publisher: "湖南文艺出版社"
   # 影视特有字段
   director: ""
   actors: ""
   duration: ""
 
-- title: ""
+- title: "宝莲灯"
   type: "movie"
-  date: ""
+  date: "1999"
   rating: ""
-  cover: ""
+  cover: "https://static.flomoapp.com/file/2025-03-11/3540/d1c94b4e1830c9172372912667713b95.png?OSSAccessKeyId=LTAI5tAXfrgN5cBQ7Bym1EcM&Expires=1741950617&Signature=ESmwYKQUIXy33jSxoNoO2GIYlXU%3D"
   link: ""
   director: ""
   actors: ""
-  duration: ""
+  duration: "很不错"
