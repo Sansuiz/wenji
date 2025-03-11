@@ -122,6 +122,7 @@ class Cursor {
 }
 
 const menuItems = [
+    {text: '回到顶部', action: () => window.scrollTo({top: 0, behavior: 'smooth'})},
     {text: '刷新页面', action: () => location.reload()},
     {text: '返回首页', action: () => location.href = '/wenji/'},
     {text: '文章归档', action: () => location.href = '/wenji/cnarchive/'},
