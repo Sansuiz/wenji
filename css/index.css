@@ -90,6 +90,17 @@ a:hover {
 .main-body a:hover {
   color: rgb(10, 10, 10);
 }
+.cover-image {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
 blockquote { 
   border-left: 3px solid #eeeeec; 
   padding-left: 0.7em; 
