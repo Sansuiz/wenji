@@ -29,12 +29,7 @@ layout: cndefault
 <p>{% for tag in page.tags %}<block class="blog-tag"><a href="/wenji/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 </div>
 
-<!-- Valine 评论框 start -->
-{% if page.valine %}
-    {% include valine_comments.html %}
-{% endif %}
-<!-- Valine 评论框 end -->
-
+<!-- 评论 -->
 {% if page.comments %}
     {% include giscus_comments.html %}
 {% endif %}
