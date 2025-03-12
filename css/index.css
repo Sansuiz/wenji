@@ -370,3 +370,28 @@ article table thead tr th, article table tbody tr td{
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+/* 文章封面图样式 */
+.page-cover {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  height: 200px;
+  z-index: -1;
+  opacity: 0.8;
+  background: linear-gradient(to left, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .page-cover {
+    width: 200px;
+    height: auto;
+    top: 10px;
+    right: 10px;
+  }
+}

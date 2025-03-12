@@ -19,6 +19,7 @@ layout: cndefault
     {% include cloud-music-full.html %}
 {% endif %}
 
+{% if page.cover-image %}<div class="article-cover" style="background-image: url('{{ page.cover-image }}')"></div>{% endif %}
 <article>
 {{content}}
 </article>
