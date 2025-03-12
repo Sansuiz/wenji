@@ -2,24 +2,7 @@
 layout: cndefault
 title: 归档 (含英文博客)
 permalink: /cnarchive/
-paginate: 50
-paginate_path: "/cnarchive/page:num/"
 ---
-
-{% for post in paginator.posts %}
-  {% include archive-post.html %}
-{% endfor %}
-
-<!-- 分页导航 -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">上一页</a>
-  {% endif %}
-  <span>当前页: {{ paginator.page }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">下一页</a>
-  {% endif %}
-</div>
 
 ### 归档 (含英文博客)
 
