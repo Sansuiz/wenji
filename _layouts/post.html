@@ -5,7 +5,6 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p><i>{{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • <i>{{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
-{% if page.cover-image %}<div class="article-cover" style="background-image: url('{{ page.cover-image }}')"></div>{% endif %}
 <article>
 {{content}}
 </article>
