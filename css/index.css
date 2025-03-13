@@ -393,7 +393,6 @@ article table thead tr th, article table tbody tr td{
 }
 
 .logo-image {
-  position: absolute;
-  width: 100%;
+  position: relative;
   right: 2px;
 }
