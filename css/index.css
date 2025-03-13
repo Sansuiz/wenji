@@ -102,7 +102,7 @@ pre{
 }
 img{ 
   max-width: 100%; 
-  box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 3px 0 rgba(255, 255, 255, 0.2);
 }
 iframe, #embed-video{
   max-width: 100%; max-height: 75vw;
@@ -393,6 +393,5 @@ article table thead tr th, article table tbody tr td{
 }
 
 .logo-image {
-  position: relative;
   background-position: right;
 }
