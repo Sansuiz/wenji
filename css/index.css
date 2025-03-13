@@ -391,3 +391,9 @@ article table thead tr th, article table tbody tr td{
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+
+.logo-image {
+  position: absolute;
+  width: 100%;
+  right: 2px;
+}
