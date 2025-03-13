@@ -395,5 +395,5 @@ article table thead tr th, article table tbody tr td{
 .logo-image {
   position: relative;
   background-position: right;
-  right: 2px;
+  left: 2px;
 }
