@@ -12,7 +12,7 @@ title: 三歲文集-SANSUIZ
 
 <p style="text-align:left;margin-top:1.2em;margin-bottom:0;">
 <b>文章 </b>
-| 按<a href="/wenji/cnarchive#tags">标签</a>浏览 
+| 按<a href="/cnarchive#tags">标签</a>浏览 
 <!--<span style="float:right;">按<a href="/cnarchive#tags">标签</a>浏览</span>-->
 </p>
 ---
@@ -26,5 +26,5 @@ title: 三歲文集-SANSUIZ
 {% endfor %}
 </table>
 <hr>
-<p>文章<a href="/wenji/cnarchive">归档</a></p>
+<p>文章<a href="/cnarchive">归档</a></p>
 

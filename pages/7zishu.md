@@ -14,7 +14,7 @@ permalink: /zishu/
 
 
 
-个人简历 [>\>](/wenji/files/)
+个人简历 [>\>](/files/)
 
 
 
