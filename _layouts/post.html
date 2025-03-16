@@ -6,6 +6,11 @@ layout: default
 <p><i>{{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • <i>{{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
 
+<div class="toc-container">
+  <div class="toc-header">Contents</div>
+  <nav class="toc-nav" id="toc-en"></nav>
+</div>
+
 <article>
 {{content}}
 </article>
