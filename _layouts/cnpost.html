@@ -13,6 +13,11 @@ layout: cndefault
 <p><i>{{ page.date | date: "%Y-%m-%d" }}</i>{% if page.author %} • <i>{{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 </header>
 
+<div class="toc-container">
+  <div class="toc-header">目录</div>
+  <nav class="toc-nav" id="toc"></nav>
+</div>
+
 <!-- 在正文开头添加网易云音乐插件 -->
 <!-- cloud music -->
 {% if page.music-id %}
@@ -34,6 +39,8 @@ layout: cndefault
 <article>
 {{content}}
 </article>
+
+<script src="/js/toc.js"></script>
 
 <div align="right">
     <br>
