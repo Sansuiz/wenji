@@ -127,7 +127,7 @@ const menuItems = [
     {text: '返回首页', action: () => location.href = '/'},
     {text: '文章归档', action: () => location.href = '/cnarchive/'},
     {text: '备注留言', action: () => window.open('https://f.wps.cn/g/hQQzfcZC/', '_blank')},
-    {text: 'SANSUIZ', action: () => window.open('https://bento.me/sansuiz', '_blank')}
+    {text: 'SANSUIZ', action: () => location.href = 'https://buyivi.xyz/'},
 ];
 
 (() => {
