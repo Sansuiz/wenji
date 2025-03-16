@@ -1,24 +1,19 @@
 .toc-container {
   position: fixed;
-  right: 0;
-  top: 4rem;
-  width: 12rem;
-  padding: 0.5rem;
-  max-height: 2.8rem; /* 单行高度 */
+  right: 2rem;
+  top: 6rem;
+  width: auto;
+  padding: 0;
+  max-height: 3rem;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease;
   z-index: 100;
-  background: transparent;
-  box-shadow: none;
-  border: none;
 }
 
 .toc-container:hover {
-  max-height: calc(100vh - 8rem);
-  overflow: auto;
-  width: 18rem;
-  background: rgba(255,254,253,0.96);
-  backdrop-filter: blur(10px);
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+  padding-right: 1rem;
 }
 
 .toc-item:not(.active-current) {
@@ -31,10 +26,16 @@
 }
 
 .toc-item {
-  font-size: 0.8rem;
-  padding: 0.3rem 0;
-  opacity: 0.6;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  padding: 0.15rem 0;
+  opacity: 0.5;
+  transition: all 0.2s;
+  margin-left: 1rem;
 }
+
+.toc-item[data-level="3"] { margin-left: 2rem; }
+.toc-item[data-level="4"] { margin-left: 3rem; }
 
 .toc-item.active {
   opacity: 1;

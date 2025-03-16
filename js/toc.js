@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const item = document.createElement('div');
       item.className = 'toc-item';
       item.innerHTML = `<a href='#${heading.id}'>${heading.textContent}</a>`;
-      if (heading.tagName === 'H3') item.style.paddingLeft = '1rem';
-      if (heading.tagName === 'H4') item.style.paddingLeft = '2rem';
+      item.setAttribute('data-level', heading.tagName.toLowerCase());
       tocNav.appendChild(item);
     });
   };
@@ -37,10 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 优化后的滚动监听
   window.addEventListener('scroll', () => {
-    const activeHeading = Array.from(headings).find(h => {
+    const activeHeading = Array.from(headings).reduce((closest, h) => {
       const rect = h.getBoundingClientRect();
-      return rect.top <= 200 && rect.bottom >= 100;
-    });
+      const distance = Math.abs(rect.top - 150);
+      return distance < (closest.distance || Infinity) ? {element:h, distance} : closest;
+    }, {}).element;
     
     // 移除所有激活状态
     document.querySelectorAll('.toc-item').forEach(item => {
