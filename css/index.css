@@ -238,9 +238,28 @@ article table thead tr th, article table tbody tr td{
  * Syntax highlighting styles
  */
 .highlight {
+  position: relative;
   background: #eeeeec;
-  max-width: 52rem;
-  margin: 0 auto; }
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  padding: 2px 8px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.highlight:hover .copy-btn {
+  opacity: 1;
+}
   .highlight .c {
     color: #998;
     font-style: italic; }
