@@ -4,9 +4,9 @@
   top: 4rem;
   width: 12rem;
   padding: 0.5rem;
-  max-height: calc(100vh - 8rem);
-  overflow: hidden auto;
-  transition: all 0.3s;
+  max-height: 2.8rem; /* 单行高度 */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
   z-index: 100;
   background: transparent;
   box-shadow: none;
@@ -14,9 +14,20 @@
 }
 
 .toc-container:hover {
+  max-height: calc(100vh - 8rem);
+  overflow: auto;
   width: 18rem;
   background: rgba(255,254,253,0.96);
   backdrop-filter: blur(10px);
+}
+
+.toc-item:not(.active-current) {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.toc-container:hover .toc-item:not(.active-current) {
+  opacity: 0.6;
 }
 
 .toc-item {

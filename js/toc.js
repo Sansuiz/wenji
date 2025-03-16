@@ -42,8 +42,20 @@ document.addEventListener('DOMContentLoaded', () => {
       return rect.top <= 200 && rect.bottom >= 100;
     });
     
+    // 移除所有激活状态
     document.querySelectorAll('.toc-item').forEach(item => {
-      item.classList.toggle('active', item.querySelector('a')?.hash === `#${activeHeading?.id}`);
+      item.classList.remove('active-current');
     });
+    
+    // 设置当前激活项
+    const activeItem = document.querySelector(`.toc-item a[href='#${activeHeading?.id}']`)?.parentElement;
+    if(activeItem) {
+      activeItem.classList.add('active-current');
+      activeItem.scrollIntoView({block: 'nearest'});
+    }
   });
+
+  // 移除原有的模式切换事件
+  window.addEventListener('mouseenter', createFullToc);
+  window.addEventListener('mouseleave', createMinimalToc);
 });
