@@ -2,14 +2,17 @@
   position: fixed;
   right: 2rem;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateZ(0);
   width: 15rem;
-  padding: 1rem;
-  background: #fffefd;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  max-height: 70vh;
+  padding: 1rem 0;
+  background: rgba(255,254,253,0.9);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  max-height: 80vh;
   overflow-y: auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
 }
 
 .toc-item {
@@ -23,14 +26,47 @@
   margin: 0 0 0.5rem;
 }
 
+.toc-item {
+  position: relative;
+  padding: 0.4rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.toc-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.toc-item.active {
+  background: rgba(209,67,67,0.05);
+}
+
+.toc-item.active::before {
+  background: #d14343;
+}
+
+.toc-item h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding-left: 0;
+}
+
 .toc-item h3 {
   font-size: 1rem;
   padding-left: 1rem;
+  margin: 0.3rem 0;
 }
 
 .toc-item h4 {
   font-size: 0.9rem;
   padding-left: 2rem;
+  margin: 0.2rem 0;
 }
 
 .toc-item a {
@@ -45,9 +81,23 @@
   border-left-color: #d14343;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .toc-container {
-    display: none;
+    right: -100%;
+    width: 70%;
+    top: 60px;
+    transform: none;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+  }
+  
+  .toc-container.active {
+    right: 0;
+  }
+  
+  .toc-item {
+    padding: 0.6rem 1rem;
+  }
   }
 }
 
