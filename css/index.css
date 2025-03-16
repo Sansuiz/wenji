@@ -96,7 +96,10 @@ blockquote {
   margin: 16px 1px; 
   color: #555;
   font-family: "楷体", KaiTi, STKaiti;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+blockquote:hover {
+  border-left-color: #ddd;
 }
 pre{
   padding: 0.3rem 0.7rem;
