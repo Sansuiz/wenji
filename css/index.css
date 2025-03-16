@@ -239,7 +239,7 @@ article table thead tr th, article table tbody tr td{
  */
 .highlight {
   background: #eeeeec;
-  max-width: 100%;
+  max-width: 52rem;
   margin: 0 auto; }
   .highlight .c {
     color: #998;
