@@ -35,11 +35,26 @@ code {
 {
   padding: 0.2em 3em\9;
   padding: 0.2em 3.5vw 0.2em 3.5vw;
-  
   line-height: 1.6;
   height: 3em\9;
   height: 3vw;
   min-height: 2.2em;
+  
+  /* 毛玻璃效果 */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  
+  /* 过渡效果 */
+  transition: all 0.3s ease;
+}
+
+.nav-header:hover {
+  /* 悬停光影效果 */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .info-bottom
