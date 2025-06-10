@@ -33,6 +33,28 @@ code {
 
 .nav-header
 {
+  background-color: #fffefd; /* 与main-body相同的白色 */
+  width: 100%;
+  max-width: 52rem; /* 与body-wrapper相同的最大宽度 */
+  margin: 0 auto;
+  padding: 0.8em 3.5vw; /* 与main-body相同的padding */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 添加轻微阴影增强层次感 */
+  position: relative;
+  z-index: 10;
+}
+
+/* 如果需要保持导航栏固定在顶部 */
+/* .nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
+/* 调整body-wrapper的margin-top以避免内容被固定导航栏遮挡 */
+/* .body-wrapper {
+  margin-top: 3.5vw;
+} */
   padding: 0.2em 3em\9;
   padding: 0.2em 3.5vw 0.2em 3.5vw;
   
@@ -422,26 +444,4 @@ article table thead tr th, article table tbody tr td{
 
 .logo-image {
   background-position: right;
-}
-.main-nav {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1em 0;
-  background: white;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.main-nav a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1.1em;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #0066cc;
 }
