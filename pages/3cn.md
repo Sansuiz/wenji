@@ -10,7 +10,6 @@ title: 三歲文集-SANSUIZ
 </p></blockquote>
 </article>
 
-<p style="margin-top:1.2em;margin-bottom:0;"><b>英文</b> | 切换至 <a href="/">Englih</a></p>
 <p style="text-align:left;margin-top:1.2em;margin-bottom:0;">
 <b>文章 </b>
 | 按<a href="/cnarchive#tags">标签</a>浏览 
@@ -28,5 +27,4 @@ title: 三歲文集-SANSUIZ
 </table>
 <hr>
 <p>文章<a href="/cnarchive">归档</a></p>
-<p>了解更多 <a href="/cnabout">关于我</a></p>
 
