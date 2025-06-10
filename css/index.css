@@ -445,3 +445,22 @@ article table thead tr th, article table tbody tr td{
 .logo-image {
   background-position: right;
 }
+
+.nav-header {
+  background-color: #fffefd;
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0.8em 3.5vw;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 1em; /* 添加与正文区域的间距 */
+}
+
+.body-wrapper {
+  padding-left: 3.5vw; /* 确保正文内容与导航栏左对齐 */
+}
+
+/* 如果需要更明显的分隔效果 */
+/* .nav-header {
+  border-bottom: 1px solid #eeeeec;
+} */
