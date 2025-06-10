@@ -33,28 +33,6 @@ code {
 
 .nav-header
 {
-  background-color: #fffefd; /* 与main-body相同的白色 */
-  width: 100%;
-  max-width: 52rem; /* 与body-wrapper相同的最大宽度 */
-  margin: 0 auto;
-  padding: 0.8em 3.5vw; /* 与main-body相同的padding */
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* 添加轻微阴影增强层次感 */
-  position: relative;
-  z-index: 10;
-}
-
-/* 如果需要保持导航栏固定在顶部 */
-/* .nav-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
-
-/* 调整body-wrapper的margin-top以避免内容被固定导航栏遮挡 */
-/* .body-wrapper {
-  margin-top: 3.5vw;
-} */
   padding: 0.2em 3em\9;
   padding: 0.2em 3.5vw 0.2em 3.5vw;
   
@@ -86,7 +64,7 @@ code {
 {
   background-color: #fffefd;
   padding: 0.8em 3em 1.4em 3em\9;
-  padding: 3.5vw 3.5vw 1.4vw 3.5vw;
+  padding: 1.4vw 3.5vw 1.4vw 3.5vw;
   font-size: 0.8em\9;
   font-size: 1.0rem;
   line-height: 1.6;
@@ -445,22 +423,3 @@ article table thead tr th, article table tbody tr td{
 .logo-image {
   background-position: right;
 }
-
-.nav-header {
-  background-color: #fffefd;
-  width: 100%;
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: 0.8em 3.5vw;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  margin-bottom: 1em; /* 添加与正文区域的间距 */
-}
-
-.body-wrapper {
-  padding-left: 3.5vw; /* 确保正文内容与导航栏左对齐 */
-}
-
-/* 如果需要更明显的分隔效果 */
-/* .nav-header {
-  border-bottom: 1px solid #eeeeec;
-} */
