@@ -31,18 +31,7 @@ code {
 }
 
 
-.nav-header {
-  padding: 1em 3.5vw;
-  margin-bottom: 2em;
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  border-bottom: 1px solid #eeeeec;
-  line-height: 1.6;
-  height: auto;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+.nav-header
 {
   padding: 0.2em 3em\9;
   padding: 0.2em 3.5vw 0.2em 3.5vw;
