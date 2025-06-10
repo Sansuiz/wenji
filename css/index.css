@@ -423,3 +423,25 @@ article table thead tr th, article table tbody tr td{
 .logo-image {
   background-position: right;
 }
+.main-nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #0066cc;
+}
