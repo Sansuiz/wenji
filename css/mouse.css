@@ -1,26 +1,37 @@
 #cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    background: #000;
-    border-radius: 8px;
-    opacity: 0.25;
-    z-index: 10086;
-    pointer-events: none;
-    transition: 0.2s ease-in-out;
-    transition-property: background, opacity, transform;
-  }
-  
-  #cursor.hidden {
-    opacity: 0;
-  }
-  
-  #cursor.hover {
-    opacity: 0.1;
-    transform: scale(2.5);
-  }
-  
-  #cursor.active {
-    opacity: 0.5;
-    transform: scale(0.5);
-  }
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 8px;
+  opacity: 0.25;
+  z-index: 10086;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  transition-property: background, opacity, transform;
+}
+
+#cursor.hidden {
+  opacity: 0;
+}
+
+#cursor.hover {
+  opacity: 0.1;
+  transform: scale(2.5);
+}
+
+#cursor.hover::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2px solid rgba(255,255,255,0.8);
+  border-radius: 50%;
+  transform: scale(1.8);
+  transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+#cursor.active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
