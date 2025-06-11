@@ -1,0 +1,28 @@
+/* 文章目录样式 */
+.content-index {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.content-index-title {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#toc a {
+  display: block;
+  padding: 3px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+#toc a:hover {
+  color: #1e88e5;
+}
