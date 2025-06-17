@@ -24,8 +24,14 @@
 	</script>
 
 	<!-- font-awesome -->
+	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+	<link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- 加入 font awesome 字体 -->
 
 	<!-- 代码复制按钮 -->
-	<script src="{{ '/js/copy-button.js' | prepend: site.baseurl }}"></script><!-- 代码复制按钮 -->
+	<script src="{{ '/js/copy-button.js' | prepend: site.baseurl }}" defer></script><!-- 代码复制按钮 -->
+	<style>
+	/* 关键CSS规则 */
+	.body-wrapper, .nav-header { display: block; }
+	</style>
 </head>
