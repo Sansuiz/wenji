@@ -3,7 +3,7 @@ layout: cnpost
 title:  "那些洒下热泪的（一） | 出师表 "
 date:   2021-06-01 15:00:00
 categories: cn
-tags: 观止 文鉴
+tags: 观止
 ---
 
 <div class="heti heti--ancient">

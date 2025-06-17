@@ -2,10 +2,9 @@
 layout: cnpost
 title: "碳中和笔记 | 核心词之气候变化"
 date: 2024-07-30 23:35:00
-author: SANSUIZ
+author: 赵乐天
 categories: cn
-tags: 双碳
-comments: true
+tags: 工作/双碳
 ---
 
 __目录__

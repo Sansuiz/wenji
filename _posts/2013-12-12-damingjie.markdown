@@ -3,7 +3,7 @@ layout: cnpost
 title:  "王朝兴衰，唯有医道长存"
 date:   2013-12-12 16:31:28
 categories: cn
-tags: 电影
+tags: 观影
 ---
 	
 ![大明劫](https://img1.doubanio.com/view/photo/l/public/p2154039537.webp)

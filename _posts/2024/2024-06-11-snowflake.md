@@ -2,10 +2,9 @@
 layout: cnpost
 title: "博客 | 雪花特效"
 date: 2024-06-11 21:35:00
-author: SANSUIZ
+author: 赵赵
 categories: cn
 tags: 博客
-comments: true
 ---
 
 ## 1 基本信息

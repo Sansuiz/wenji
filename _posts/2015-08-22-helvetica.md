@@ -3,7 +3,7 @@ layout: cnpost
 title: "字体故事：Helvetica"
 date: 2015-08-22 20:00:00
 categories: cn
-tags: type 电影
+tags: 观影
 ---
 
 ![helvetica](https://img1.doubanio.com/lpic/s24231011.jpg)

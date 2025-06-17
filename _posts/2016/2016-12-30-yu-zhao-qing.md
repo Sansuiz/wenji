@@ -2,8 +2,9 @@
 layout: cnpost
 title:  "雨照晴"
 date:   2016-12-30 22:00:00
+author: 赵赵
 categories: cn
-tags: 诗歌 三歳作
+tags: 诗歌
 ---
 
 

@@ -1,9 +1,10 @@
 ---
 layout: cnpost
-title:  "送给你（六）"
+title:  "送给未来的你（六）"
 date:   2020-09-13 19:27:00
+author: 赵赵
 categories: cn
-tags: 诗歌 三歳作 送给你
+tags: 诗歌 送给你
 ---
 
 

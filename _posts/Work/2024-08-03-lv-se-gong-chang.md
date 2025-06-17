@@ -2,10 +2,9 @@
 layout: cnpost
 title: "绿色 | 绿色工厂与零碳工厂政策、标准"
 date: 2024-08-03 20:00:00
-author: SANSUIZ
+author: 赵乐天
 categories: cn
-tags: 绿色
-comments: true
+tags: 工作/申报
 ---
 
 __目录__

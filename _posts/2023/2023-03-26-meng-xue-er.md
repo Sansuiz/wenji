@@ -2,8 +2,9 @@
 layout: cnpost
 title:  "回味 | 曾记否，幼时初学（二）"
 date:   2023-03-26 15:00:00
+author: 赵赵
 categories: cn
-tags: 古诗词品-小 慕然回首
+tags: 诗歌 读书
 ---
 
 __目录__
