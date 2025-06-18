@@ -78,12 +78,32 @@ code {
   color: white; 
 }
 a, a:visited {
-  color: #108adc;
+  color: #555;
   text-decoration: none;
 }
 a:hover {
   color: #108adc;
 }
+
+a::after {
+  content: '';
+  position: absolute;
+  top: -0.2em;
+  right: -0.4em;
+  width: 6px;
+  height: 6px;
+  background: #ed627e;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(100%, -100%) rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 50%) rotate(360deg);
+}
+
 .main-body a, .main-body a:visited {
   color: rgb(220, 0, 0); 
 }
