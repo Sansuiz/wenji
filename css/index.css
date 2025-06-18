@@ -108,11 +108,11 @@ a:hover::after {
   color: rgb(220, 0, 0); 
 }
 
-.main-body a:hover {
+.main-body a:visited:hover {
   color: #108adc;
 }
 
-.main-body a::after {
+.main-body a:visited::after {
   content: '';
   position: absolute;
   top: -0.2em;
@@ -126,7 +126,7 @@ a:hover::after {
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.main-body a:hover::after {
+.main-body a:visited:hover::after {
   opacity: 1;
   transform: translate(-50%, 50%) rotate(360deg);
 }
