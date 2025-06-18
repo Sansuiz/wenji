@@ -78,18 +78,39 @@ code {
   color: white; 
 }
 a, a:visited {
-  color: #555;
+  color: #108adc;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(10, 10, 10);
+  color: #108adc;
 }
 .main-body a, .main-body a:visited {
   color: rgb(220, 0, 0); 
 }
+
 .main-body a:hover {
-  color: rgb(10, 10, 10);
+  color: #108adc;
 }
+
+.main-body a::after {
+  content: '';
+  position: absolute;
+  top: -0.2em;
+  right: -0.4em;
+  width: 6px;
+  height: 6px;
+  background: #ed627e;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(100%, -100%) rotate(0deg);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.main-body a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 50%) rotate(360deg);
+}
+
 blockquote { 
   border-left: 3px solid transparent; 
   padding-left: 0.7em; 
