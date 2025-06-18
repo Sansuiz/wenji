@@ -21,7 +21,7 @@
 .toc-indicator-item.h4 { height: 8px; margin-left: 16px; width: 2px; }
 
 .toc-indicator-item.active {
-  background: #000;
+  background: #108adc;
 }
 
 .toc-indicator-item:hover {
