@@ -10,9 +10,9 @@
   transition: all 0.3s ease;
 }
 
-.text-card-blue {
+.text-card.blue {
   background: #f5f9ff;
-  border-left: 4px solid #5b9aff;
+  border-left-color: #5b9aff;
 }
 
 .text-card:hover {
@@ -29,9 +29,9 @@
   border-bottom: 1px dashed #ffb6c1;
 }
 
-.text-card-blue .text-card-title {
+.text-card.blue .text-card-title {
   color: #2a6fdb;
-  border-bottom: 1px dashed #a8c6ff;
+  border-bottom-color: #a8c6ff;
 }
 
 .text-card-content {
@@ -40,9 +40,16 @@
   color: #555;
 }
 
+.text-card-content pre {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+}
+
 /* 响应式调整 */
 @media (max-width: 768px) {
-  .text-card, .text-card-blue {
+  .text-card {
     margin: 1rem 0;
     padding: 1rem;
   }
