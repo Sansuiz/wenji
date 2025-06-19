@@ -24,7 +24,7 @@ future: true
 # highlighter: rouge
 # highlighter: false
 
-timezone: Asia/Shanghai
+timezone: 
 
 # Giscus comment settings
 giscus:
