@@ -10,6 +10,11 @@
   transition: all 0.3s ease;
 }
 
+.text-card-blue {
+  background: #f5f9ff;
+  border-left: 4px solid #5b9aff;
+}
+
 .text-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transform: translateY(-2px);
@@ -24,6 +29,11 @@
   border-bottom: 1px dashed #ffb6c1;
 }
 
+.text-card-blue .text-card-title {
+  color: #2a6fdb;
+  border-bottom: 1px dashed #a8c6ff;
+}
+
 .text-card-content {
   font-size: 1rem;
   line-height: 1.6;
@@ -32,7 +42,7 @@
 
 /* 响应式调整 */
 @media (max-width: 768px) {
-  .text-card {
+  .text-card, .text-card-blue {
     margin: 1rem 0;
     padding: 1rem;
   }
