@@ -5,6 +5,7 @@ date: 2025-05-26 20:00:00
 author: 赵乐天
 categories: cn
 tags: 工作/节能
+cover_image: https://cdnv2.ruguoapp.com/FrwQ-SKpVK58pwe8znmib5SzGeWwv3.png?imageMogr2/auto-orient/thumbnail/3513600@
 ---
 
 __目录__
