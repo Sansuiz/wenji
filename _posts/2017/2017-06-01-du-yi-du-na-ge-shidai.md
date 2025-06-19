@@ -2,7 +2,7 @@
 layout: cnpost
 title: "不如读书：《燕山夜话》"
 date: 2017-06-01 22:00:00
-author: 赵赵
+author: 赵啊赵
 categories: cn
 tags: 读书
 ---

@@ -2,7 +2,7 @@
 layout: cnpost
 title:  "好的爱情"
 date:   2020-09-12 14:12:00
-author: 赵赵
+author: 赵啊赵
 categories: cn
 tags: 随想
 ---

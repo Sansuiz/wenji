@@ -2,7 +2,7 @@
 layout: cnpost
 title:  "我们为什么不再是儿童"
 date:   2020-06-01 22:30:00
-author: 赵赵
+author: 赵啊赵
 categories: cn
 tags: 随想
 ---

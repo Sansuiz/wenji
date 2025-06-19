@@ -2,7 +2,7 @@
 layout: cnpost
 title:  "雨照晴"
 date:   2016-12-30 22:00:00
-author: 赵赵
+author: 赵啊赵
 categories: cn
 tags: 诗歌
 ---
