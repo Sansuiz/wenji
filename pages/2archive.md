@@ -9,6 +9,9 @@ permalink: /archive/
 ---
 
 {% for tag in site.tags %}<block class="blog-tag"><a href="#{{ tag | first }}">{{ tag | first }} <span class="tag-count">{{ tag[1] | size }}</span></a></block>{% endfor %}
+
+<br>
+
 {% for post in site.posts  %}{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% capture this_month %}{{ post.date | date: "%m" }}{% endcapture %}
 {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
