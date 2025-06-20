@@ -156,33 +156,54 @@ article table thead tr th, article table tbody tr td{
 }
 
 .blog-tag{
-  padding: 0.1em 0.6em;
-  margin: 0.2em 0.4em;
+  padding: 0.3em 0.8em;
+  margin: 0.3em 0.5em;
   line-height: 1.5;
-  border: solid 1px #ddd;
+  border: 1px solid #e0e0e0;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.9rem;
   position: relative;
-  background-color: #f8f8f8;
-  border-radius: 3px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  color: #555;
   transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
+
 .tag-count {
   display: inline-block;
-  margin-left: 4px;
-  padding: 0 4px;
-  font-size: 0.8em;
-  background-color: #e0e0e0;
-  color: #555;
+  margin-left: 5px;
+  padding: 0.1em 0.5em;
+  font-size: 0.75em;
+  background-color: #e8f4f8;
+  color: #5a8ba8;
   border-radius: 10px;
-  line-height: 1.2;
+  line-height: 1.3;
+  transition: all 0.3s ease;
 }
+
+.blog-tag:hover {
+  background-color: #f0f7fa;
+  border-color: #c0d5e0;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
 .blog-tag:hover .tag-count {
-  background-color: #d0d0d0;
-  color: #333;
+  background-color: #d8eaf3;
+  color: #3a6d8c;
 }
 .blog-tag::before {
   content: "";
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
+}
+
+.blog-tag:hover {
+  animation: float 1.5s ease-in-out infinite;
 }
 .blog-tag:hover {
   background-color: transparent;
