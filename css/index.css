@@ -163,6 +163,23 @@ article table thead tr th, article table tbody tr td{
   display: inline-block;
   font-size: 1rem;
   position: relative;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+.tag-count {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 0.8em;
+  background-color: #e0e0e0;
+  color: #555;
+  border-radius: 10px;
+  line-height: 1.2;
+}
+.blog-tag:hover .tag-count {
+  background-color: #d0d0d0;
+  color: #333;
 }
 .blog-tag::before {
   content: "";
