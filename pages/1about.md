@@ -19,7 +19,7 @@ If there is any violation of your rights and interests, please contact my master
 
 [安大略](http://www.anandalue.com/) \| 
 [曼亚灿](https://manyacan.com/) \| 
-[于长野](https://rabithua.club/) \| 
+[于长野](https://zzfw.cc/) \| 
 [1900](http://1900.live/) \| 
 [秦枫鸢梦](https://blog.zwying.com/) \| 
 [定格咖啡馆馆长](https://kaix.in/) \| 
