@@ -153,12 +153,32 @@
     display: block !important;
     right: -200px;
     width: 200px;
+    max-height: 80vh;
+    overflow-y: auto;
     transition: all 0.3s ease;
     cursor: pointer;
     padding: 12px 12px;
     background: rgba(255, 254, 253, 0.95) !important;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
     border: 1px solid #eee !important;
+  }
+  
+  .toc-indicator::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-thumb:hover {
+    background: #999;
   }
   
   .toc-indicator.toc-open {
