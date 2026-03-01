@@ -1,3 +1,29 @@
+.toc-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 254, 253, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  color: #555;
+}
+
+.toc-toggle:hover {
+  background: rgba(255, 254, 253, 1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
 .toc-indicator {
   position: fixed;
   right: 30px;
@@ -11,6 +37,29 @@
   padding: 12px 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   border: 1px solid #eee;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd #f5f5f5;
+}
+
+.toc-indicator::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc-indicator::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 2px;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
 }
 
 .toc-indicator:hover {
@@ -111,45 +160,82 @@
 }
 
 @media (max-width: 768px) {
+  .toc-toggle {
+    display: flex;
+  }
+  
   .toc-indicator {
+    right: -300px;
+    opacity: 0;
+    pointer-events: none;
+    width: 250px;
+    max-height: 80vh;
+    padding: 20px 15px;
+    transform: translateY(-50%);
+  }
+  
+  .toc-indicator.active {
     right: 15px;
-    opacity: 0.6;
-    padding: 8px 4px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%);
   }
   
   .toc-indicator-item {
-    margin: 6px 0;
+    margin: 10px 0;
   }
   
   .toc-indicator-item.h2 {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
   }
   
   .toc-indicator-item.h3 {
-    width: 3px;
-    height: 3px;
-    margin-left: 6px;
-  }
-  
-  .toc-indicator-item.h4 {
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     margin-left: 12px;
   }
   
+  .toc-indicator-item.h4 {
+    width: 3px;
+    height: 3px;
+    margin-left: 24px;
+  }
+  
   .toc-tooltip {
+    display: block;
+    position: static;
+    opacity: 1;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0 0 0 10px;
+    margin: -14px 0 14px 8px;
+    white-space: normal;
+    max-width: none;
+    font-size: 14px;
+  }
+  
+  .toc-tooltip::before {
     display: none;
   }
   
   .toc-indicator:hover {
-    opacity: 0.9;
-    transform: translateY(-50%) translateX(-3px);
+    transform: translateY(-50%);
   }
 }
 
 @media (max-width: 480px) {
+  .toc-toggle {
+    right: 15px;
+    bottom: 20px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
   .toc-indicator {
-    display: none;
+    width: 220px;
   }
 }

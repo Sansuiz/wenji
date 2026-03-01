@@ -30,7 +30,29 @@ function setupTOC() {
       
       indicator.addEventListener('click', () => {
         smoothScrollTo(heading);
+        // 在移动设备上点击导航项后关闭导航
+        if (window.innerWidth <= 768) {
+          tocContainer.classList.remove('active');
+        }
       });
+    });
+    
+    // 创建切换按钮
+    const toggleButton = document.createElement('div');
+    toggleButton.className = 'toc-toggle';
+    toggleButton.innerHTML = '☰';
+    document.body.appendChild(toggleButton);
+    
+    // 点击切换按钮显示/隐藏导航
+    toggleButton.addEventListener('click', () => {
+      tocContainer.classList.toggle('active');
+    });
+    
+    // 点击导航外部关闭导航
+    document.addEventListener('click', (e) => {
+      if (!tocContainer.contains(e.target) && !toggleButton.contains(e.target)) {
+        tocContainer.classList.remove('active');
+      }
     });
     
     // 滚动时高亮当前章节
@@ -48,7 +70,7 @@ function setupTOC() {
             .classList.add('active');
           break;
         }
-      }
+      });
     });
   }
 }
