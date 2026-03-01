@@ -11,8 +11,27 @@
   padding: 12px 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   border: 1px solid #eee;
-  width: 20px;
+  width: 30px;
   overflow: hidden;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.toc-indicator::-webkit-scrollbar {
+  width: 3px;
+}
+
+.toc-indicator::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.3);
 }
 
 .toc-indicator:hover {
@@ -35,6 +54,7 @@
   display: inline-block;
   border-radius: 50%;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .toc-indicator-item.h2 span {
