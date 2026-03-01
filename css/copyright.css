@@ -1,88 +1,98 @@
 .article-copyright {
-    margin: 40px 0 30px;
-    padding: 25px;
     background-color: #f9f9f9;
-    border-left: 4px solid #ed627e;
-    font-family: 'pt-serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .article-copyright h3 {
     margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-size: 18px;
     color: #333;
-    font-weight: bold;
 }
 
 .article-copyright p {
     margin-bottom: 20px;
     color: #666;
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 14px;
 }
 
 .article-copyright p a {
-    color: #ed627e;
+    color: #666;
     text-decoration: none;
-    transition: color 0.3s ease;
+    border-bottom: 1px solid #ddd;
 }
 
 .article-copyright p a:hover {
-    color: #108adc;
-}
-
-.copyright-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 0.9rem;
-}
-
-.copyright-item {
-    flex: 1;
-    min-width: 120px;
-}
-
-.copyright-item .label {
-    display: block;
-    color: #999;
-    margin-bottom: 5px;
-    font-size: 0.8rem;
-}
-
-.copyright-item .value {
-    display: block;
     color: #333;
-    font-weight: 500;
+    border-bottom-color: #333;
 }
 
-.copyright-item .value a {
-    color: #ed627e;
+.copyright-meta {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.copyright-meta span {
+    flex: 1;
+}
+
+.copyright-info {
+    display: flex;
+    font-size: 14px;
+    color: #333;
+}
+
+.copyright-info span {
+    flex: 1;
+}
+
+.copyright-info a {
+    color: #333;
     text-decoration: none;
-    transition: color 0.3s ease;
+    border-bottom: 1px solid #ddd;
 }
 
-.copyright-item .value a:hover {
-    color: #108adc;
+.copyright-info a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.article-copyright::after {
+    content: "CC";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.05);
+    line-height: 1;
+    z-index: 0;
+}
+
+.article-copyright > * {
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
     .article-copyright {
-        padding: 20px;
-        margin: 30px 0 20px;
+        padding: 15px;
     }
     
     .article-copyright h3 {
-        font-size: 1.1rem;
-        margin-bottom: 12px;
+        font-size: 16px;
     }
     
-    .copyright-details {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .copyright-item {
-        min-width: 100%;
+    .article-copyright::after {
+        font-size: 80px;
+        top: 10px;
+        right: 10px;
     }
 }
