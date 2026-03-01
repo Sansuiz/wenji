@@ -62,7 +62,7 @@ function setupTOC() {
     // 移动端点击显示/隐藏目录
     tocContainer.addEventListener('click', (e) => {
       if (window.innerWidth <= 480) {
-        // 只在点击目录容器本身（而不是目录项）时触发
+        // 点击目录容器本身时触发
         if (e.target === tocContainer) {
           tocContainer.classList.toggle('toc-open');
         }

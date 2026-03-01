@@ -205,12 +205,12 @@
   .toc-indicator::before {
     content: '≡';
     position: absolute;
-    left: -20px;
+    left: -30px;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255, 254, 253, 0.9);
     color: #555;
-    width: 20px;
+    width: 30px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -219,7 +219,7 @@
     box-shadow: -2px 0 8px rgba(0,0,0,0.1);
     border: 1px solid #eee;
     border-right: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     z-index: 1001;
   }
@@ -291,14 +291,6 @@
     max-width: 150px !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-  }
-  
-  .toc-indicator:hover {
-    right: -195px;
-  }
-  
-  .toc-indicator.toc-open:hover {
-    right: 0;
   }
   
   .toc-indicator-item:hover .toc-tooltip {
