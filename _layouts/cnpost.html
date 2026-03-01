@@ -44,12 +44,12 @@ layout: cndefault
 
 <!-- 上下篇导航 -->
 <div class="post-navigation">
-    {% if page.prev %}
+    {% if page.previous %}
     <div class="prev-post">
-        <a href="{{ page.prev.url }}">
+        <a href="{{ page.previous.url }}">
             <span class="nav-arrow">&larr;</span> 上一篇
             <br>
-            <span class="post-title">{{ page.prev.title }}</span>
+            <span class="post-title">{{ page.previous.title }}</span>
         </a>
     </div>
     {% endif %}

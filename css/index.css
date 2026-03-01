@@ -202,6 +202,7 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
 .post-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 30px 0;
   padding: 15px;
   background-color: #f9f9f9;
@@ -210,27 +211,20 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
 }
 
 .prev-post {
+  flex: 1;
   text-align: left;
-  padding-right: 15px;
-  border-right: 1px solid #eee;
-  min-width: 50%;
 }
 
 .next-post {
+  flex: 1;
   text-align: right;
-  padding-left: 15px;
-  min-width: 50%;
 }
 
 .post-navigation a {
   color: #333;
   text-decoration: none;
   transition: all 0.3s ease;
-  display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  display: block;
 }
 
 .post-navigation a:hover {
@@ -248,30 +242,20 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
   font-weight: bold;
   margin-top: 5px;
   display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
   .post-navigation {
     flex-direction: column;
+    align-items: flex-start;
   }
   
   .prev-post, .next-post {
-    border-right: none;
-    border-bottom: 1px solid #eee;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 15px;
+    width: 100%;
     margin-bottom: 15px;
-    text-align: center;
   }
   
   .next-post {
-    border-bottom: none;
-    padding-bottom: 0;
     margin-bottom: 0;
   }
 }
