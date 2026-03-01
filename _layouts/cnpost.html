@@ -37,11 +37,6 @@ layout: cndefault
     </a>
 </div>
 
-<div id="info-bottom">
-<hr>
-<p>{% for tag in page.tags %}<block class="blog-tag"><a href="/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
-</div>
-
 <!-- 文章版权信息 -->
 <div class="article-copyright">
     <h3>{{ page.title }}</h3>
@@ -56,6 +51,11 @@ layout: cndefault
         <span>{{ page.date | date: "%Y 年 %m 月 %d 日" }}</span>
         <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
     </div>
+</div>
+
+<div id="info-bottom">
+<hr>
+<p>{% for tag in page.tags %}<block class="blog-tag"><a href="/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 </div>
 
 <!-- 上下篇导航 -->
