@@ -192,6 +192,10 @@
     align-items: center;
     margin: 8px 0;
     cursor: pointer;
+    width: auto;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
   }
   
   .toc-indicator-item::before {
