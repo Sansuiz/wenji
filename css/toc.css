@@ -11,101 +11,96 @@
   padding: 12px 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   border: 1px solid #eee;
+  width: 20px;
+  overflow: hidden;
 }
 
 .toc-indicator:hover {
   opacity: 1;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   transform: translateY(-50%) translateX(-5px);
+  width: 220px;
 }
 
 .toc-indicator-item {
-  width: 4px;
-  height: 4px;
-  background: #ccc;
+  display: flex;
+  align-items: center;
   margin: 8px 0;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  border-radius: 50%;
 }
 
-.toc-indicator-item.h2 {
+.toc-indicator-item span {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.toc-indicator-item.h2 span {
   width: 6px;
   height: 6px;
+  background: #ccc;
 }
 
-.toc-indicator-item.h3 {
+.toc-indicator-item.h3 span {
   width: 4px;
   height: 4px;
+  background: #ccc;
   margin-left: 8px;
 }
 
-.toc-indicator-item.h4 {
+.toc-indicator-item.h4 span {
   width: 3px;
   height: 3px;
+  background: #ccc;
   margin-left: 16px;
 }
 
-.toc-indicator-item.active {
+.toc-indicator-item.active span {
   background: #108adc;
   transform: scale(1.4);
   box-shadow: 0 0 10px rgba(16, 138, 220, 0.5);
 }
 
-.toc-indicator-item:hover {
+.toc-indicator-item:hover span {
   background: #666;
   transform: scale(1.2);
 }
 
 .toc-tooltip {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 254, 253, 0.95);
-  padding: 6px 14px;
-  border-radius: 6px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-  font-size: 13px;
-  white-space: nowrap;
+  display: inline-block;
   opacity: 0;
   transition: all 0.3s ease;
-  pointer-events: none;
   font-family: 'pt-serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
   color: #555;
-  border: 1px solid #eee;
-  max-width: 200px;
+  font-size: 13px;
+  max-width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toc-indicator:hover .toc-tooltip {
+  opacity: 1;
 }
 
 .toc-indicator-item:hover .toc-tooltip {
-  opacity: 1;
-  transform: translateY(-50%) translateX(-10px);
-}
-
-.toc-tooltip::before {
-  content: '';
-  position: absolute;
-  right: -6px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-width: 6px 0 6px 8px;
-  border-style: solid;
-  border-color: transparent transparent transparent rgba(255, 254, 253, 0.95);
-  z-index: 1;
+  color: #108adc;
 }
 
 @media (max-width: 1024px) {
   .toc-indicator {
     right: 20px;
-    padding: 10px 6px;
+    padding: 10px 8px;
+  }
+  
+  .toc-indicator:hover {
+    width: 200px;
   }
   
   .toc-tooltip {
     font-size: 12px;
-    padding: 4px 10px;
     max-width: 160px;
   }
 }
@@ -114,37 +109,39 @@
   .toc-indicator {
     right: 15px;
     opacity: 0.6;
-    padding: 8px 4px;
+    padding: 8px 8px;
+    width: 20px;
+  }
+  
+  .toc-indicator:hover {
+    opacity: 0.9;
+    transform: translateY(-50%) translateX(-3px);
+    width: 20px;
   }
   
   .toc-indicator-item {
     margin: 6px 0;
   }
   
-  .toc-indicator-item.h2 {
+  .toc-indicator-item.h2 span {
     width: 5px;
     height: 5px;
   }
   
-  .toc-indicator-item.h3 {
+  .toc-indicator-item.h3 span {
     width: 3px;
     height: 3px;
     margin-left: 6px;
   }
   
-  .toc-indicator-item.h4 {
+  .toc-indicator-item.h4 span {
     width: 2px;
     height: 2px;
     margin-left: 12px;
   }
   
   .toc-tooltip {
-    display: none;
-  }
-  
-  .toc-indicator:hover {
-    opacity: 0.9;
-    transform: translateY(-50%) translateX(-3px);
+    display: none !important;
   }
 }
 
