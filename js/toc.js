@@ -30,6 +30,10 @@ function setupTOC() {
       
       indicator.addEventListener('click', () => {
         smoothScrollTo(heading);
+        // 在移动端点击目录项后关闭目录
+        if (window.innerWidth <= 480) {
+          tocContainer.classList.remove('toc-open');
+        }
       });
     });
     
@@ -48,6 +52,32 @@ function setupTOC() {
             .classList.add('active');
           break;
         }
+      }
+    });
+    
+    // 移动端点击显示/隐藏目录
+    tocContainer.addEventListener('click', (e) => {
+      if (window.innerWidth <= 480) {
+        // 只在点击目录容器本身（而不是目录项）时触发
+        if (e.target === tocContainer) {
+          tocContainer.classList.toggle('toc-open');
+        }
+      }
+    });
+    
+    // 点击其他区域关闭目录
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 480) {
+        if (!tocContainer.contains(e.target)) {
+          tocContainer.classList.remove('toc-open');
+        }
+      }
+    });
+    
+    // 窗口大小变化时调整目录状态
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 480) {
+        tocContainer.classList.remove('toc-open');
       }
     });
   }

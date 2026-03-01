@@ -150,6 +150,72 @@
 
 @media (max-width: 480px) {
   .toc-indicator {
+    display: block;
+    right: -200px;
+    width: 200px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .toc-indicator.toc-open {
+    right: 0;
+  }
+  
+  .toc-indicator::before {
+    content: '≡';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 254, 253, 0.9);
+    color: #555;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px 0 0 4px;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    border-right: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .toc-indicator.toc-open::before {
+    content: '×';
+  }
+  
+  .toc-indicator-item {
+    margin: 6px 0;
+  }
+  
+  .toc-indicator-item.h2 {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .toc-indicator-item.h3 {
+    width: 3px;
+    height: 3px;
+    margin-left: 6px;
+  }
+  
+  .toc-indicator-item.h4 {
+    width: 2px;
+    height: 2px;
+    margin-left: 12px;
+  }
+  
+  .toc-tooltip {
     display: none;
+  }
+  
+  .toc-indicator:hover {
+    right: -195px;
+  }
+  
+  .toc-indicator.toc-open:hover {
+    right: 0;
   }
 }
