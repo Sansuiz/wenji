@@ -103,9 +103,14 @@
 
 .toc-indicator:hover .toc-tooltip {
   opacity: 1;
+  color: #555;
 }
 
-.toc-indicator:hover .toc-tooltip {
+.toc-indicator-item:hover .toc-tooltip {
+  color: #108adc;
+}
+
+.toc-indicator-item.active .toc-tooltip {
   color: #108adc;
 }
 
