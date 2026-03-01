@@ -252,11 +252,24 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
   
   .prev-post, .next-post {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
   }
   
   .next-post {
     margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .post-navigation a {
+    display: block;
+    width: 100%;
+  }
+  
+  .post-navigation .post-title {
+    margin-top: 5px;
+    font-size: 14px;
   }
 }
 
