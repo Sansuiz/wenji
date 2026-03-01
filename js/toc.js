@@ -13,17 +13,6 @@ function setupTOC() {
   if (headings.length > 0) {
     document.body.appendChild(tocContainer);
     
-    // 创建移动端汉堡按钮
-    const toggleButton = document.createElement('div');
-    toggleButton.className = 'toc-toggle';
-    toggleButton.textContent = '≡';
-    document.body.appendChild(toggleButton);
-    
-    // 创建遮罩层
-    const overlay = document.createElement('div');
-    overlay.className = 'toc-overlay';
-    document.body.appendChild(overlay);
-    
     headings.forEach(heading => {
       const id = heading.textContent.toLowerCase().replace(/\s+/g, '-');
       heading.id = id;
@@ -48,8 +37,6 @@ function setupTOC() {
         // 在移动端点击目录项后关闭目录
         if (window.innerWidth <= 480) {
           tocContainer.classList.remove('toc-open');
-          overlay.classList.remove('active');
-          toggleButton.textContent = '≡';
         }
       });
     });
@@ -72,33 +59,29 @@ function setupTOC() {
       }
     });
     
-    // 点击汉堡按钮显示/隐藏目录
-    toggleButton.addEventListener('click', () => {
+    // 移动端点击显示/隐藏目录
+    tocContainer.addEventListener('click', (e) => {
       if (window.innerWidth <= 480) {
-        tocContainer.classList.toggle('toc-open');
-        overlay.classList.toggle('active');
-        toggleButton.textContent = tocContainer.classList.contains('toc-open') ? '×' : '≡';
+        // 点击目录容器本身时触发
+        if (e.target === tocContainer) {
+          tocContainer.classList.toggle('toc-open');
+        }
       }
     });
     
-    // 点击遮罩层关闭目录
-    overlay.addEventListener('click', () => {
-      tocContainer.classList.remove('toc-open');
-      overlay.classList.remove('active');
-      toggleButton.textContent = '≡';
-    });
-    
-    // 点击目录容器内部不关闭
-    tocContainer.addEventListener('click', (e) => {
-      e.stopPropagation();
+    // 点击其他区域关闭目录
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 480) {
+        if (!tocContainer.contains(e.target)) {
+          tocContainer.classList.remove('toc-open');
+        }
+      }
     });
     
     // 窗口大小变化时调整目录状态
     window.addEventListener('resize', () => {
       if (window.innerWidth > 480) {
         tocContainer.classList.remove('toc-open');
-        overlay.classList.remove('active');
-        toggleButton.textContent = '≡';
       }
     });
   }
