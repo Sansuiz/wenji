@@ -28,7 +28,8 @@ function setupTOC() {
       indicator.appendChild(tooltip);
       tocContainer.appendChild(indicator);
       
-      indicator.addEventListener('click', () => {
+      indicator.addEventListener('click', (e) => {
+        e.stopPropagation(); // 阻止事件冒泡，避免触发容器的点击事件
         smoothScrollTo(heading);
         // 在移动端点击目录项后关闭目录
         if (window.innerWidth <= 480) {
