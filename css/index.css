@@ -209,26 +209,28 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.prev-post, .next-post {
-  flex: 1;
-}
-
 .prev-post {
   text-align: left;
   padding-right: 15px;
   border-right: 1px solid #eee;
+  min-width: 50%;
 }
 
 .next-post {
   text-align: right;
   padding-left: 15px;
+  min-width: 50%;
 }
 
 .post-navigation a {
   color: #333;
   text-decoration: none;
   transition: all 0.3s ease;
-  display: block;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .post-navigation a:hover {
@@ -246,6 +248,10 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
   font-weight: bold;
   margin-top: 5px;
   display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
