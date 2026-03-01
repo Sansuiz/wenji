@@ -105,8 +105,13 @@
   opacity: 1;
 }
 
-.toc-indicator-item:hover .toc-tooltip {
+.toc-indicator:hover .toc-tooltip {
   color: #108adc;
+}
+
+/* 桌面端隐藏汉堡按钮 */
+.toc-toggle-btn {
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -168,64 +173,46 @@
 @media (max-width: 480px) {
   .toc-indicator {
     display: block !important;
-    right: -200px;
+    position: fixed;
+    right: -220px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 200px;
     max-height: 80vh;
     overflow-y: auto;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    padding: 12px 12px;
+    transition: right 0.3s ease;
     background: rgba(255, 254, 253, 0.95) !important;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
     border: 1px solid #eee !important;
-  }
-  
-  .toc-indicator::-webkit-scrollbar {
-    width: 4px;
-  }
-  
-  .toc-indicator::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 2px;
-  }
-  
-  .toc-indicator::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 2px;
-  }
-  
-  .toc-indicator::-webkit-scrollbar-thumb:hover {
-    background: #999;
+    border-radius: 8px 0 0 8px !important;
+    padding: 15px !important;
+    z-index: 1000 !important;
   }
   
   .toc-indicator.toc-open {
     right: 0;
   }
   
-  .toc-indicator::before {
-    content: '≡';
-    position: absolute;
-    left: -30px;
+  .toc-toggle-btn {
+    display: block !important;
+    position: fixed;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 254, 253, 0.9);
-    color: #555;
-    width: 30px;
+    width: 40px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px 0 0 4px;
-    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
-    border: 1px solid #eee;
-    border-right: none;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1001;
-  }
-  
-  .toc-indicator.toc-open::before {
-    content: '×';
+    background: rgba(255, 254, 253, 0.9) !important;
+    color: #555 !important;
+    border: 1px solid #eee !important;
+    border-radius: 8px 0 0 8px !important;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    z-index: 1001 !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
   }
   
   .toc-indicator-item {
@@ -242,29 +229,30 @@
   }
   
   .toc-indicator-item span {
-    display: inline-block;
-    border-radius: 50%;
-    margin-right: 8px;
+    display: inline-block !important;
+    border-radius: 50% !important;
+    margin-right: 10px !important;
+    flex-shrink: 0 !important;
   }
   
   .toc-indicator-item.h2 span {
-    width: 5px;
-    height: 5px;
-    background: #ccc;
+    width: 6px !important;
+    height: 6px !important;
+    background: #ccc !important;
   }
   
   .toc-indicator-item.h3 span {
-    width: 3px;
-    height: 3px;
-    background: #ccc;
-    margin-left: 8px;
+    width: 4px !important;
+    height: 4px !important;
+    background: #ccc !important;
+    margin-left: 10px !important;
   }
   
   .toc-indicator-item.h4 span {
-    width: 2px;
-    height: 2px;
-    background: #ccc;
-    margin-left: 16px;
+    width: 3px !important;
+    height: 3px !important;
+    background: #ccc !important;
+    margin-left: 20px !important;
   }
   
   .toc-indicator-item.active span {
@@ -295,5 +283,23 @@
   
   .toc-indicator-item:hover .toc-tooltip {
     color: #108adc !important;
+  }
+  
+  .toc-indicator::-webkit-scrollbar {
+    width: 4px !important;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+    border-radius: 2px !important;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-thumb {
+    background: #ccc !important;
+    border-radius: 2px !important;
+  }
+  
+  .toc-indicator::-webkit-scrollbar-thumb:hover {
+    background: #999 !important;
   }
 }

@@ -10,8 +10,14 @@ function setupTOC() {
   const tocContainer = document.createElement('div');
   tocContainer.className = 'toc-indicator';
   
+  // 创建汉堡按钮
+  const toggleBtn = document.createElement('div');
+  toggleBtn.className = 'toc-toggle-btn';
+  toggleBtn.textContent = '≡';
+  
   if (headings.length > 0) {
     document.body.appendChild(tocContainer);
+    document.body.appendChild(toggleBtn);
     
     headings.forEach(heading => {
       const id = heading.textContent.toLowerCase().replace(/\s+/g, '-');
@@ -37,6 +43,7 @@ function setupTOC() {
         // 在移动端点击目录项后关闭目录
         if (window.innerWidth <= 480) {
           tocContainer.classList.remove('toc-open');
+          toggleBtn.textContent = '≡';
         }
       });
     });
@@ -59,21 +66,19 @@ function setupTOC() {
       }
     });
     
-    // 移动端点击显示/隐藏目录
-    tocContainer.addEventListener('click', (e) => {
-      if (window.innerWidth <= 480) {
-        // 点击目录容器本身时触发
-        if (e.target === tocContainer) {
-          tocContainer.classList.toggle('toc-open');
-        }
-      }
+    // 点击汉堡按钮显示/隐藏目录
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      tocContainer.classList.toggle('toc-open');
+      toggleBtn.textContent = tocContainer.classList.contains('toc-open') ? '×' : '≡';
     });
     
     // 点击其他区域关闭目录
     document.addEventListener('click', (e) => {
       if (window.innerWidth <= 480) {
-        if (!tocContainer.contains(e.target)) {
+        if (!tocContainer.contains(e.target) && e.target !== toggleBtn) {
           tocContainer.classList.remove('toc-open');
+          toggleBtn.textContent = '≡';
         }
       }
     });
@@ -82,6 +87,7 @@ function setupTOC() {
     window.addEventListener('resize', () => {
       if (window.innerWidth > 480) {
         tocContainer.classList.remove('toc-open');
+        toggleBtn.textContent = '≡';
       }
     });
   }
