@@ -42,6 +42,22 @@ layout: cndefault
 <p>{% for tag in page.tags %}<block class="blog-tag"><a href="/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 </div>
 
+<!-- 文章版权信息 -->
+<div class="article-copyright">
+    <h3>{{ page.title }}</h3>
+    <p><a href="{{ page.url }}">{{ page.url }}</a></p>
+    <div class="copyright-meta">
+        <span>作者</span>
+        <span>发布时间</span>
+        <span>许可协议</span>
+    </div>
+    <div class="copyright-info">
+        <span>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
+        <span>{{ page.date | date: "%Y 年 %m 月 %d 日" }}</span>
+        <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
+    </div>
+</div>
+
 <!-- 上下篇导航 -->
 <div class="post-navigation">
     {% if page.previous %}
@@ -62,22 +78,6 @@ layout: cndefault
         </a>
     </div>
     {% endif %}
-</div>
-
-<!-- 文章版权信息 -->
-<div class="article-copyright">
-    <h3>{{ page.title }}</h3>
-    <p><a href="{{ page.url }}">{{ page.url }}</a></p>
-    <div class="copyright-meta">
-        <span>作者</span>
-        <span>发布时间</span>
-        <span>许可协议</span>
-    </div>
-    <div class="copyright-info">
-        <span>{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</span>
-        <span>{{ page.date | date: "%Y 年 %m 月 %d 日" }}</span>
-        <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
-    </div>
 </div>
 
 <!-- 评论 -->
