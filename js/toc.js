@@ -30,6 +30,11 @@ function setupTOC() {
       
       indicator.addEventListener('click', () => {
         smoothScrollTo(heading);
+        // 在移动端点击标题后自动关闭导航
+        if (window.innerWidth <= 480) {
+          tocContainer.classList.remove('active');
+          document.querySelector('.toc-toggle').classList.remove('active');
+        }
       });
     });
     
@@ -48,6 +53,26 @@ function setupTOC() {
             .classList.add('active');
           break;
         }
+      }
+    });
+    
+    // 添加移动端切换按钮
+    const toggleButton = document.createElement('div');
+    toggleButton.className = 'toc-toggle';
+    document.body.appendChild(toggleButton);
+    
+    toggleButton.addEventListener('click', () => {
+      tocContainer.classList.toggle('active');
+      toggleButton.classList.toggle('active');
+    });
+    
+    // 点击页面其他区域关闭导航
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 480 && 
+          !tocContainer.contains(e.target) && 
+          !toggleButton.contains(e.target)) {
+        tocContainer.classList.remove('active');
+        toggleButton.classList.remove('active');
       }
     });
   }

@@ -11,6 +11,10 @@
   padding: 12px 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
   border: 1px solid #eee;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
 }
 
 .toc-indicator:hover {
@@ -150,6 +154,66 @@
 
 @media (max-width: 480px) {
   .toc-indicator {
-    display: none;
+    position: fixed;
+    right: -300px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 12px;
   }
+  
+  .toc-indicator.active {
+    right: 15px;
+  }
+  
+  .toc-toggle {
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 254, 253, 0.9);
+    border: 1px solid #eee;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .toc-toggle::before {
+    content: '≡';
+  }
+  
+  .toc-toggle.active::before {
+    content: '×';
+  }
+}
+
+/* 滚动条样式 */
+.toc-indicator::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc-indicator::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.toc-indicator::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.3);
 }
