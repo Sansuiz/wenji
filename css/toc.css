@@ -150,12 +150,15 @@
 
 @media (max-width: 480px) {
   .toc-indicator {
-    display: block;
+    display: block !important;
     right: -200px;
     width: 200px;
     transition: all 0.3s ease;
     cursor: pointer;
     padding: 12px 12px;
+    background: rgba(255, 254, 253, 0.95) !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
+    border: 1px solid #eee !important;
   }
   
   .toc-indicator.toc-open {
@@ -181,6 +184,7 @@
     border-right: none;
     font-size: 14px;
     font-weight: bold;
+    z-index: 1001;
   }
   
   .toc-indicator.toc-open::before {
@@ -188,67 +192,68 @@
   }
   
   .toc-indicator-item {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    cursor: pointer;
-    width: auto;
-    height: auto;
-    background: transparent;
-    border-radius: 0;
+    display: flex !important;
+    align-items: center !important;
+    margin: 8px 0 !important;
+    cursor: pointer !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    transform: none !important;
+    box-shadow: none !important;
   }
   
-  .toc-indicator-item::before {
-    content: '';
+  .toc-indicator-item span {
     display: inline-block;
     border-radius: 50%;
     margin-right: 8px;
   }
   
-  .toc-indicator-item.h2::before {
+  .toc-indicator-item.h2 span {
     width: 5px;
     height: 5px;
     background: #ccc;
   }
   
-  .toc-indicator-item.h3::before {
+  .toc-indicator-item.h3 span {
     width: 3px;
     height: 3px;
     background: #ccc;
     margin-left: 8px;
   }
   
-  .toc-indicator-item.h4::before {
+  .toc-indicator-item.h4 span {
     width: 2px;
     height: 2px;
     background: #ccc;
     margin-left: 16px;
   }
   
-  .toc-indicator-item.active::before {
-    background: #108adc;
-    transform: scale(1.4);
-    box-shadow: 0 0 8px rgba(16, 138, 220, 0.4);
+  .toc-indicator-item.active span {
+    background: #108adc !important;
+    transform: scale(1.4) !important;
+    box-shadow: 0 0 8px rgba(16, 138, 220, 0.4) !important;
   }
   
   .toc-tooltip {
-    display: inline-block;
-    opacity: 1;
-    position: static;
-    transform: none;
-    background: transparent;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 12px;
-    white-space: normal;
-    pointer-events: auto;
-    font-family: 'pt-serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
-    color: #555;
-    border: none;
-    max-width: 150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: inline-block !important;
+    opacity: 1 !important;
+    position: static !important;
+    transform: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 12px !important;
+    white-space: normal !important;
+    pointer-events: auto !important;
+    font-family: 'pt-serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif !important;
+    color: #555 !important;
+    border: none !important;
+    max-width: 150px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
   
   .toc-indicator:hover {
@@ -260,6 +265,6 @@
   }
   
   .toc-indicator-item:hover .toc-tooltip {
-    color: #108adc;
+    color: #108adc !important;
   }
 }

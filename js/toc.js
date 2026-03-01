@@ -21,6 +21,9 @@ function setupTOC() {
       indicator.className = `toc-indicator-item ${heading.tagName.toLowerCase()}`;
       indicator.dataset.target = id;
       
+      const dot = document.createElement('span');
+      indicator.appendChild(dot);
+      
       const tooltip = document.createElement('div');
       tooltip.className = 'toc-tooltip';
       tooltip.textContent = heading.textContent;
