@@ -151,16 +151,21 @@
 @media (max-width: 480px) {
   .toc-indicator {
     display: block !important;
-    right: -200px;
+    right: 0;
     width: 200px;
     max-height: 80vh;
     overflow-y: auto;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
     padding: 12px 12px;
     background: rgba(255, 254, 253, 0.95) !important;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
     border: 1px solid #eee !important;
+    transform: translateX(100%);
+  }
+  
+  .toc-indicator.toc-open {
+    transform: translateX(0);
   }
   
   .toc-indicator::-webkit-scrollbar {
@@ -181,9 +186,7 @@
     background: #999;
   }
   
-  .toc-indicator.toc-open {
-    right: 0;
-  }
+  /* 移除这个规则，因为我们使用transform来控制位置 */
   
   .toc-indicator::before {
     content: '≡';
@@ -209,6 +212,14 @@
   
   .toc-indicator.toc-open::before {
     content: '×';
+  }
+  
+  .toc-indicator:hover {
+    transform: translateX(95%);
+  }
+  
+  .toc-indicator.toc-open:hover {
+    transform: translateX(0);
   }
   
   .toc-indicator-item {
