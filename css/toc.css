@@ -4,55 +4,124 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.toc-indicator:hover {
+  opacity: 1;
 }
 
 .toc-indicator-item {
-  width: 4px;
+  width: 3px;
   height: 12px;
-  background: #ccc;
-  margin: 6px 0;
+  background: #ddd;
+  margin: 8px 0;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  border-radius: 2px;
 }
 
-.toc-indicator-item.h2 { height: 16px; }
-.toc-indicator-item.h3 { height: 12px; margin-left: 8px; width: 3px; }
-.toc-indicator-item.h4 { height: 8px; margin-left: 16px; width: 2px; }
+.toc-indicator-item.h2 {
+  height: 18px;
+  width: 4px;
+}
+
+.toc-indicator-item.h3 {
+  height: 14px;
+  margin-left: 10px;
+  width: 3px;
+}
+
+.toc-indicator-item.h4 {
+  height: 10px;
+  margin-left: 20px;
+  width: 2px;
+}
 
 .toc-indicator-item.active {
   background: #108adc;
+  transform: scaleX(1.2);
+  box-shadow: 0 0 8px rgba(16, 138, 220, 0.4);
 }
 
 .toc-indicator-item:hover {
   background: #666;
+  transform: scaleX(1.1);
 }
 
 .toc-tooltip {
   position: absolute;
-  left: 15px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
-  padding: 2px 8px;
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  font-size: 12px;
+  background: rgba(255, 254, 253, 0.95);
+  padding: 4px 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 13px;
   white-space: nowrap;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: all 0.3s ease;
   pointer-events: none;
+  font-family: 'pt-serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, serif;
+  color: #555;
+  border: 1px solid #eee;
 }
 
 .toc-indicator-item:hover .toc-tooltip {
   opacity: 1;
+  transform: translateY(-50%) translateX(5px);
+}
+
+.toc-tooltip::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 8px 6px 0;
+  border-style: solid;
+  border-color: transparent rgba(255, 254, 253, 0.95) transparent transparent;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
   .toc-indicator {
     left: 10px;
+    opacity: 0.6;
   }
+  
+  .toc-indicator-item {
+    margin: 6px 0;
+  }
+  
+  .toc-indicator-item.h2 {
+    height: 14px;
+  }
+  
+  .toc-indicator-item.h3 {
+    height: 10px;
+    margin-left: 8px;
+  }
+  
+  .toc-indicator-item.h4 {
+    height: 8px;
+    margin-left: 16px;
+  }
+  
   .toc-tooltip {
+    display: none;
+  }
+  
+  .toc-indicator:hover {
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 480px) {
+  .toc-indicator {
     display: none;
   }
 }
