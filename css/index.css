@@ -220,16 +220,21 @@ article h1 a:hover, article h2 a:hover, article h3 a:hover, article h4 a:hover, 
   text-align: right;
 }
 
-.post-navigation a {
-  color: #333;
+.main-body .post-navigation a {
+  color: #333 !important;
   text-decoration: none;
   transition: all 0.3s ease;
   display: block;
+  position: static !important;
 }
 
-.post-navigation a:hover {
-  color: #ed627e;
+.main-body .post-navigation a:hover {
+  color: #ed627e !important;
   transform: translateY(-2px);
+}
+
+.main-body .post-navigation a::after {
+  display: none !important;
 }
 
 .nav-arrow {
