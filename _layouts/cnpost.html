@@ -42,6 +42,28 @@ layout: cndefault
 <p>{% for tag in page.tags %}<block class="blog-tag"><a href="/cnarchive/#{{tag}}">{{ tag }}</a></block>{% endfor %}</p>
 </div>
 
+<!-- 上下篇导航 -->
+<div class="post-navigation">
+    {% if page.prev %}
+    <div class="prev-post">
+        <a href="{{ page.prev.url }}">
+            <span class="nav-arrow">&larr;</span> 上一篇
+            <br>
+            <span class="post-title">{{ page.prev.title }}</span>
+        </a>
+    </div>
+    {% endif %}
+    {% if page.next %}
+    <div class="next-post">
+        <a href="{{ page.next.url }}">
+            下一篇 <span class="nav-arrow">&rarr;</span>
+            <br>
+            <span class="post-title">{{ page.next.title }}</span>
+        </a>
+    </div>
+    {% endif %}
+</div>
+
 <!-- 文章版权信息 -->
 <div class="article-copyright">
     <h3>{{ page.title }}</h3>
