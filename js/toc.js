@@ -15,9 +15,15 @@ function setupTOC() {
   toggleBtn.className = 'toc-toggle-btn';
   toggleBtn.textContent = '≡';
   
+  // 创建目录内容容器
+  const tocContent = document.createElement('div');
+  tocContent.className = 'toc-content';
+  
   if (headings.length > 0) {
+    // 构建HTML结构
+    tocContainer.appendChild(toggleBtn);
+    tocContainer.appendChild(tocContent);
     document.body.appendChild(tocContainer);
-    document.body.appendChild(toggleBtn);
     
     headings.forEach(heading => {
       const id = heading.textContent.toLowerCase().replace(/\s+/g, '-');
@@ -35,7 +41,7 @@ function setupTOC() {
       tooltip.textContent = heading.textContent;
       
       indicator.appendChild(tooltip);
-      tocContainer.appendChild(indicator);
+      tocContent.appendChild(indicator);
       
       indicator.addEventListener('click', (e) => {
         e.stopPropagation(); // 阻止事件冒泡，避免触发容器的点击事件
