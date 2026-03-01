@@ -287,14 +287,6 @@
     text-overflow: ellipsis !important;
   }
   
-  .toc-indicator:hover {
-    right: -195px;
-  }
-  
-  .toc-indicator.toc-open:hover {
-    right: 0;
-  }
-  
   .toc-indicator-item:hover .toc-tooltip {
     color: #108adc !important;
   }
